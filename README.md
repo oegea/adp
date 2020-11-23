@@ -79,7 +79,7 @@ The first step on ADP is to configure the UPDATE CLIENT. In this operation, the 
  2. The UPDATE AUTHORITY's URL.
  3. Current installed version.
 
-That information will be returned by the 
+That information MUST be returned by the APLICATION SERVICE in response of a GET HTTPS request to the URI indicated by the end-user during the configuration p
 
 ### Overall Process Overview
 
@@ -110,7 +110,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODM3NDY5MzcsLTE3OTAwMDQ4NDcsLT
-Y3NTI1NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIzMDYx
-NTc2LDE0OTk5MTc5MTQsLTYwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbMTQ3Mjg1NDAyMSwtMTc5MDAwNDg0NywtNj
+c1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMwNjE1
+NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
