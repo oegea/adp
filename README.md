@@ -66,12 +66,13 @@ The APPLICATION SERVICE is basically a URI where there are details specified abo
 
 These are main actions of ADP expressed on a flowchart indicating also who is the actor responsible for start each of them:
 
-Operations are represented as squares, conditions 
+>Operations are represented as squares, conditions as rhombus.
 
 ```mermaid
 graph TB
-A[UPDATE CLIENT: Retrieve APPLICATION SERVICE data] -- Link text --> B((Circle))
-B --> D{Rhombus}```
+A[UPDATE CLIENT: Retrieve APPLICATION SERVICE data] -- Link text --> B[UPDATE CLIENT: Handshake ]
+B --> D{Rhombus}
+```
 
 ## UML diagrams
 
@@ -90,6 +91,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxNzU5NDk3LDE0OTk5MTc5MTQsLTYwMz
+eyJoaXN0b3J5IjpbLTcxMjI4Mzc2LDE0OTk5MTc5MTQsLTYwMz
 QxNzUzNF19
 -->
