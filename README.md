@@ -62,7 +62,10 @@ The APPLICATION SERVICE is a URI where there are details specified about the app
 
 ## Operations 
 
+ADP is divided in three main operations:
 
+ - UPDATE CLIENT configuration:
+ - 
 
 ### Overall Process Overview
 
@@ -93,6 +96,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODkyMjY4NjIsMTExNTk4NDU3MiwtMz
-IzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbNTMwMjU0MDk0LDExMTU5ODQ1NzIsLTMyMz
+A2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ==
 -->
