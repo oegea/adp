@@ -97,6 +97,10 @@ Note that the current installed version, contained inside `applicationVersion` M
 
 ### Available updates check and download
 
+### Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
+
+Handshake between the UPDATE CLIENT and UPDATE AUTHORITY 
+
 ### Overall Process Overview
 
 These are main actions of ADP expressed on a flowchart indicating also who is the actor responsible for start each of them:
@@ -126,8 +130,8 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzNTQwMjM1LC05NDYzMjA0ODAsLTMyMD
-Q2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkwMDA0ODQ3LC02NzUyNTQ1
-MTUsNTMwMjU0MDk0LDExMTU5ODQ1NzIsLTMyMzA2MTU3NiwxND
-k5OTE3OTE0LC02MDM0MTc1MzRdfQ==
+eyJoaXN0b3J5IjpbLTIxMzY5MTQ2NjgsLTk0NjMyMDQ4MCwtMz
+IwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1
+NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LD
+E0OTk5MTc5MTQsLTYwMzQxNzUzNF19
 -->
