@@ -85,9 +85,12 @@ This request MUST NOT require the usage of authentication mechanisms.
 
 The returned JSON MUST follow the following format:
 
+*Values are provided *
 ```json
 {
-	"protocolVersion
+	"protocolVersion": "1.0",
+	"applicationVersion": "3.5-beta",
+	"updateAuthorityUrl": ""
 }
 ```
 
@@ -120,7 +123,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTU4MTQyMiwtMzIwNDY1NTg1LDE5ND
+eyJoaXN0b3J5IjpbMTE0Mjk1NzA3MCwtMzIwNDY1NTg1LDE5ND
 k3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQw
 OTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLT
 YwMzQxNzUzNF19
