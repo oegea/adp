@@ -61,7 +61,7 @@ The UPDATE CLIENT MAY handle more than one software application at the same inst
 
 ### APPLICATION SERVICE
 
-The APPLICATION SERVICE is a URI where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to do the initial handshake with the rest of the actors, and to know which version of the software to update is installed.
+The APPLICATION SERVICE is a URL where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to do the initial handshake with the rest of the actors, and to know which version of the software to update is installed.
 
 ## Operations 
 
@@ -73,9 +73,9 @@ ADP is divided in three main operations:
 
 ### UPDATE CLIENT configuration
 
-The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end-user will provide to the UPDATE CLIENT with the URI with which to access the APPLICATION SERVICE. 
+The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end-user will provide to the UPDATE CLIENT with the URL with which to access the APPLICATION SERVICE. 
 
-The UPDATE CLIENT will then do an HTTPS GET request to the indicated URI. In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
+The UPDATE CLIENT will then do an HTTPS GET request to the indicated URL. In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
 
  1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named "protocolVersion".
  2. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUrl".
@@ -124,8 +124,8 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5ND
-k3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQw
-OTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLT
-YwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbLTk4MDU4NzE3MSwtOTQ2MzIwNDgwLC0zMj
+A0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAwNDg0NywtNjc1MjU0
+NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMwNjE1NzYsMT
+Q5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
