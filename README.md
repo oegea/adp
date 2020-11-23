@@ -50,15 +50,15 @@ There are three main actors involved on ADP, they appear in this document always
 
 ### UPDATE AUTHORITY
  
-The UPDATE AUTHORITY is a remote actor which goal is to provide the latest available versions of a software application to the UPDATE CLIENT. 
+The UPDATE AUTHORITY is a remote actor which goal is to provide to the UPDATE CLIENT a list with the latest available versions of a software application. 
 
 ### UPDATE CLIENT
 
-The UPDATE CLIENT is an application that connects to the UPDATE AUTHORITY to check if new version is available, and download it if requested.
+The UPDATE CLIENT is an application that connects to the UPDATE AUTHORITY to check if new version is available, and download it if needed.
 
 ### APPLICATION SERVICE
 
-The APPLICATION SERVICE is basically a URI where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to know where the UPDATE AUTHORITY can be reached, if each actor is implementing the same ADP version, and if there are new updates available, comparing the current version of the APPLICATION SERVICE, with the UPDATE AUTHORITY's last available update.
+The APPLICATION SERVICE is a URI where there are details specified about the application to update. The APPLICATION SERVICE is always checked by the UPDATE CLIENT to know where the UPDATE AUTHORITY can be reached, among other things.
 
 ## Operations 
 
@@ -91,6 +91,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODM1MDMyMiwxMTE1OTg0NTcyLC0zMj
+eyJoaXN0b3J5IjpbLTcyOTIwMzk4NywxMTE1OTg0NTcyLC0zMj
 MwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
