@@ -64,11 +64,11 @@ The APPLICATION SERVICE is basically a URI where there are details specified abo
 
 ### Overall Process Overview
 
-These are main actions of ADP expressed on a flowchart indicating also who is the actor responsible for start each o
+These are main actions of ADP expressed on a flowchart indicating also who is the actor responsible for start each of them:
 
 ```mermaid
 graph TB
-A[Square Rect] -- Link text --> B((Circle))
+A[UPDATE CLIENT: Retrieve APPLICATION SERVICE data] -- Link text --> B((Circle))
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
@@ -91,6 +91,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4Nzc3NDA3OCwxNDk5OTE3OTE0LC02MD
-M0MTc1MzRdfQ==
+eyJoaXN0b3J5IjpbLTEyODI3NDUyMDYsMTQ5OTkxNzkxNCwtNj
+AzNDE3NTM0XX0=
 -->
