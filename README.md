@@ -25,17 +25,17 @@ Although this is not an IETF document, the key words "MUST", "MUST NOT", "REQUIR
 
 ADP aims to serve a very specific kind of public: It has been designed having in mind those applications that are normally distributed through installer wizards, and have lower complexity release processes. We found that on this specific kind of cases, a basic and easily adoptable protocol that allow to check and download updates through an external client, can drastically reduce the implementation and maintenance efforts.
 
-ADP may work on other scenarios, in part thanks to that the update process is handled by a totally decoupled from the update process. However we are very concious that ADP is nothing revolutionary, and there are many better ways to update applications and distribute new versions, specially in scenarios where continuous deployment or repositories can be adopted.
+ADP may work on other scenarios, in part thanks to that the update process is handled by an external client that is almost totally decoupled from the main application. However we are very concious that ADP is nothing revolutionary, and there are many better ways to distribute new software versions, specially in scenarios where continuous deployment or repositories can be adopted.
 
 However, as ADP is easy to learn and implement, we encourage you to read this guide, and value the possibility of using it, if it fits well on your requirements.
 
 ## Used patterns, technologies, and protocols
 
-Simplicity is one of the main goals of ADP,  we've described the protocol enforcing the usage of some patterns, technologies and protocols to achieve that simplicity and ensure easy implementation. Although this might go in detriment of extensibility of the protocol, we prefered to keep things simple.
+Simplicity is one of the main goals of ADP,  we've described the protocol enforcing the usage of some patterns, technologies and protocols to achieve that simplicity and ensure easy implementation. Although this might go in detriment of extensibility of the protocol, we preferred to keep things simple.
 
 Because of this, these are the patterns, technologies and protocols that you MUST use to ensure a valid ADP implementation:
 
- - **No dependencies between updates**: Your application MUST be able to be updated to the latest available version without installing intermediate updates, that means: If we're at 1.0 version, and the latest is the 5.0, our software MUST be capable to be directly updated to the version 5.0, skipping the 2.0, 3.0 and 4.0 previously released versions. 
+ - **No dependencies between updates**: Your application MUST be able to be updated to the latest available version without installing intermediate updates, that means: If main a at 1.0 version, and the latest is the 5.0, our software MUST be capable to be directly updated to the version 5.0, skipping the 2.0, 3.0 and 4.0 previously released versions. 
  - **HTTPS**: All communication between actors MUST be done using the HTTPS protocol. Non-secure HTTP MUST NOT be used.
  - **BASIC AUTH**: In those operations in which authentication can be implemented, BASIC AUTH MUST be the way within one part will send their credentials to other. 
  - **JSON**: Data transferred between parts MUST be formatted using [JSON](https://tools.ietf.org/html/rfc7159). 
@@ -91,6 +91,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3ODMzNzY4LDExMTU5ODQ1NzIsLTMyMz
-A2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ==
+eyJoaXN0b3J5IjpbLTE1NDE0Mzg1NiwxMTE1OTg0NTcyLC0zMj
+MwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
