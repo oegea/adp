@@ -50,7 +50,7 @@ There are three main actors involved on ADP, they appear in this document always
 
 ### UPDATE AUTHORITY
  
-The UPDATE AUTHORITY is a remote actor which goal is to provide the latest available versions of a software application. UPDATE AUTHORITY will inform, among other parameters, about the URI where the latest update can be downloaded.
+The UPDATE AUTHORITY is a remote actor which goal is to provide the latest available versions of a software application to the UPDATE CLIENT. 
 
 ### UPDATE CLIENT
 
@@ -91,6 +91,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5ODg3OTAxMywxMTE1OTg0NTcyLC0zMj
+eyJoaXN0b3J5IjpbMjEyODM1MDMyMiwxMTE1OTg0NTcyLC0zMj
 MwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
