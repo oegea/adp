@@ -35,10 +35,10 @@ Simplicity is one of the main goals of ADP,  we've described the protocol enforc
 
 Because of this, these are the patterns, technologies and protocols that you MUST use to ensure a valid ADP implementation:
 
- - **No dependencies between updates**: Your application MUST be able to be updated to the latest available version without installing intermediate updates, that means: If main a at 1.0 version, and the latest is the 5.0, our software MUST be capable to be directly updated to the version 5.0, skipping the 2.0, 3.0 and 4.0 previously released versions. 
+ - **No dependencies between updates**: Your application MUST be able to be updated to the latest available version without installing intermediate updates, that means: If main application is at 1.0 version, and the latest is the 5.0, it MUST be capable to be directly updated to the version 5.0, skipping the 2.0, 3.0 and 4.0 previously released versions. 
  - **HTTPS**: All communication between actors MUST be done using the HTTPS protocol. Non-secure HTTP MUST NOT be used.
- - **BASIC AUTH**: In those operations in which authentication can be implemented, BASIC AUTH MUST be the way within one part will send their credentials to other. 
- - **JSON**: Data transferred between parts MUST be formatted using [JSON](https://tools.ietf.org/html/rfc7159). 
+ - **BASIC AUTH**: In those operations in which authentication can be implemented, BASIC AUTH MUST be the way within one actor will send their credentials to other. 
+ - **JSON**: Data transferred between actors MUST be formatted using [JSON](https://tools.ietf.org/html/rfc7159). 
 
 ## Actors involved
 
@@ -91,6 +91,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDE0Mzg1NiwxMTE1OTg0NTcyLC0zMj
+eyJoaXN0b3J5IjpbMTY5ODg3OTAxMywxMTE1OTg0NTcyLC0zMj
 MwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
