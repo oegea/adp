@@ -54,7 +54,7 @@ The UPDATE AUTHORITY is a remote actor which goal is to provide to the UPDATE CL
 
 ### UPDATE CLIENT
 
-The UPDATE CLIENT is an application that connects to the UPDATE AUTHORITY to check if new version is available, and download it if needed.
+The UPDATE CLIENT is an application that connects to the UPDATE AUTHORITY to check if new version is available, and download it if needed. Depending on how the UPDATE CLIENT has been engineered, it MAY handle more than one different application 
 
 ### APPLICATION SERVICE
 
@@ -97,7 +97,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NjAxMzIwMiw1MzAyNTQwOTQsMTExNT
-k4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNzUz
-NF19
+eyJoaXN0b3J5IjpbLTExMTQzNTc5NTcsNTMwMjU0MDk0LDExMT
+U5ODQ1NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1
+MzRdfQ==
 -->
