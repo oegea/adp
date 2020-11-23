@@ -23,7 +23,7 @@ Although this is not an IETF document, the key words "MUST", "MUST NOT", "REQUIR
 
 ## Intended Public
 
-ADP aims to serve a very specific kind of public: It has been designed having in mind those applications that are normally distributed through installer wizards, and have lower complexity release processes. We found that on this specific kind of cases, a basic and easily adoptable protocol that allow to check and download updates through an external client, can drastically improve the implementation and maintenance efforts.
+ADP aims to serve a very specific kind of public: It has been designed having in mind those applications that are normally distributed through installer wizards, and have lower complexity release processes. We found that on this specific kind of cases, a basic and easily adoptable protocol that allow to check and download updates through an external client, can drastically reduce the implementation and maintenance efforts.
 
 ADP may work on other scenarios, in part thanks to that it has been designed to work in a way that the main application is totally decoupled from the update process. However we are very concious that ADP is nothing revolutionary, and there are many better ways to update applications and distribute new versions, specially in scenarios where continuous deployment or repositories are available.
 
@@ -91,6 +91,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OT
-k5MTc5MTQsLTYwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbOTIwOTQ0OTY2LDExMTU5ODQ1NzIsLTMyMz
+A2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ==
 -->
