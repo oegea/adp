@@ -20,6 +20,7 @@ Although this is not an IETF document, the key words "MUST", "MUST NOT", "REQUIR
  - **Operation**: Actors participate in operations to achieve their specific goals. An operation is a logic flow in which one or more actors are involved. 
  - **Remote**: Anything will be considered remote if it is placed on a location different than the APPLICATION SERVICE. This would often apply to remote actors, which will normally communicate with local actors through the Internet.
  - **Local**: Anything will be considered local if it is placed on the same location than the APPLICATION SERVICE. Local actors will communicate between them over the local network.
+ - **End-user**: The person who will interact with the system, regardless of whether it 
 
 ## Intended Public
 
@@ -103,7 +104,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1Mz
-AyNTQwOTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5
-MTQsLTYwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbLTQ4NjA4NDkyNCwtMTc5MDAwNDg0NywtNj
+c1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMwNjE1
+NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
