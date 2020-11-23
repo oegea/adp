@@ -62,6 +62,16 @@ The APPLICATION SERVICE is basically a URI where there are details specified abo
 
 ## Operations 
 
+### Overall Process Overview
+
+```mermaid
+graph TB
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+```
+
 ## UML diagrams
 
 You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
@@ -78,15 +88,7 @@ Bob-->Alice: Checking with John...
 Alice->John: Yes... John, how are you?
 ```
 
-And this will produce a flow chart:
-
-```mermaid
-graph TB
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
+eyJoaXN0b3J5IjpbMzg5MzQ5NjgwLDE0OTk5MTc5MTQsLTYwMz
+QxNzUzNF19
 -->
