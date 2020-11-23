@@ -72,7 +72,7 @@ ADP is divided in three main operations:
 
 ### UPDATE CLIENT configuration
 
-The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end user will provide to the UPDATE CLIENT
+The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end user will provide to the UPDATE CLIENT the URI where the APPLICATION SERVICE. Through this URL, 
 
 ### Overall Process Overview
 
@@ -103,7 +103,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjc2MDAyMTUsLTY3NTI1NDUxNSw1Mz
+eyJoaXN0b3J5IjpbLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1Mz
 AyNTQwOTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5
 MTQsLTYwMzQxNzUzNF19
 -->
