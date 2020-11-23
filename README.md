@@ -75,7 +75,7 @@ ADP is divided in three main operations:
 
 The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end-user will provide to the UPDATE CLIENT with the URI with which to access the APPLICATION SERVICE. 
 
-The UPDATE CLIENT will do an HTTPS GET request to the URI indicated by the end-user, which MUST return the following information: 
+The UPDATE CLIENT will then do an HTTPS GET request to the indicated URI, which MUST return the following information: 
 
  1. ADP version used by the APPLICATION SERVICE.
  2. The UPDATE AUTHORITY's URL.
@@ -112,8 +112,8 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwODU5NTIxNCwxOTQ5Nzg4ODQ0LC0xNz
-kwMDA0ODQ3LC02NzUyNTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1
-NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ
-==
+eyJoaXN0b3J5IjpbLTE5MzUxOTk2OTgsMTk0OTc4ODg0NCwtMT
+c5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0
+NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX
+0=
 -->
