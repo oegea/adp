@@ -64,8 +64,9 @@ The APPLICATION SERVICE is a URI where there are details specified about the app
 
 ADP is divided in three main operations:
 
- - UPDATE CLIENT configuration:
- - Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
+ - UPDATE CLIENT configuration.
+ - Handshake between the UPDATE CLIENT and UPDATE AUTHORITY.
+ - Available updates check and download.
 
 ### Overall Process Overview
 
@@ -96,7 +97,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTg0ODI0MSw1MzAyNTQwOTQsMTExNT
+eyJoaXN0b3J5IjpbMTM3NjAxMzIwMiw1MzAyNTQwOTQsMTExNT
 k4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNzUz
 NF19
 -->
