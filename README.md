@@ -70,8 +70,8 @@ These are main actions of ADP expressed on a flowchart indicating also who is th
 
 ```mermaid
 graph TB
-A[UPDATE CLIENT: Retrieve APPLICATION SERVICE data] -- Link text --> B[UPDATE CLIENT: Handshake ]
-B --> D{Rhombus}
+A[UPDATE CLIENT: Retrieve APPLICATION SERVICE data] -- Link text --> B[UPDATE CLIENT: Handshake with UPDATE AUTHORITY]
+B --> D{ADP version mismatch?}
 ```
 
 ## UML diagrams
@@ -91,6 +91,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjI4Mzc2LDE0OTk5MTc5MTQsLTYwMz
-QxNzUzNF19
+eyJoaXN0b3J5IjpbLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MD
+M0MTc1MzRdfQ==
 -->
