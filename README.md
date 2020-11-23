@@ -93,7 +93,7 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-Note that the current installed version MAY 
+Note that the current installed version, contained inside `applicationVersion` MAY be represented on any desired format.
 
 ### Overall Process Overview
 
@@ -124,8 +124,8 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDU4NzE3MSwtOTQ2MzIwNDgwLC0zMj
-A0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAwNDg0NywtNjc1MjU0
-NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMwNjE1NzYsMT
-Q5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
+eyJoaXN0b3J5IjpbLTIwMzg0MzIyNjgsLTk0NjMyMDQ4MCwtMz
+IwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1
+NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LD
+E0OTk5MTc5MTQsLTYwMzQxNzUzNF19
 -->
