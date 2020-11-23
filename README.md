@@ -99,7 +99,7 @@ Note that the current installed version, contained inside `applicationVersion` M
 
 ### Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
 
-Handshake between the UPDATE CLIENT and UPDATE AUTHORITY 
+The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to ensure 
 
 ### Overall Process Overview
 
@@ -130,7 +130,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzY5MTQ2NjgsLTk0NjMyMDQ4MCwtMz
+eyJoaXN0b3J5IjpbLTE4MTA3NTgwNzksLTk0NjMyMDQ4MCwtMz
 IwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1
 NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LD
 E0OTk5MTc5MTQsLTYwMzQxNzUzNF19
