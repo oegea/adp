@@ -60,7 +60,7 @@ The UPDATE CLIENT MAY handle more than one software application at the same inst
 
 ### APPLICATION SERVICE
 
-The APPLICATION SERVICE is a URI where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to do th.
+The APPLICATION SERVICE is a URI where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to do the initial handshake with the rest of the actors, and to know which version of the software to update is installed.
 
 ## Operations 
 
@@ -99,7 +99,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM1OTYwODMxLDUzMDI1NDA5NCwxMTE1OT
-g0NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0
-XX0=
+eyJoaXN0b3J5IjpbLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTExNT
+k4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNzUz
+NF19
 -->
