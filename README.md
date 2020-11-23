@@ -81,12 +81,12 @@ Alice->John: Yes... John, how are you?
 And this will produce a flow chart:
 
 ```mermaid
-graph LR
+graph TB
 A[Square Rect] -- Link text --> B((Circle))
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
