@@ -78,15 +78,16 @@ The first step on ADP is to configure the UPDATE CLIENT. In this operation, the 
 The UPDATE CLIENT will then do an HTTPS GET request to the indicated URI. In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
 
  1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named "protocolVersion".
- 2. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUr".
- 3. Current installed version. This MUST be contained inside a string parameter
+ 2. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUrl".
+ 3. Current installed version. This MUST be contained inside a string parameter named "applicationVersion".
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
-The provided JSON MUST use these parameter names:
+The returned JSON MUST follow the following format:
 
 ```json
 {
+	"protocolVersion
 }
 ```
 
@@ -119,7 +120,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MjEwMzMzOCwtMzIwNDY1NTg1LDE5ND
+eyJoaXN0b3J5IjpbLTE4OTU4MTQyMiwtMzIwNDY1NTg1LDE5ND
 k3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQw
 OTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLT
 YwMzQxNzUzNF19
