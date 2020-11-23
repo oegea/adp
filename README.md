@@ -81,7 +81,7 @@ The UPDATE CLIENT will then do an HTTPS GET request to the indicated URI. In res
  2. The UPDATE AUTHORITY's URL.
  3. Current installed version.
 
- 
+This request MUST NOT require the usage of authentication mechanisms. 
 
 ### Overall Process Overview
 
@@ -112,7 +112,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMjM2NDQ4NCwxOTQ5Nzg4ODQ0LC0xNz
+eyJoaXN0b3J5IjpbLTI1MjU5MzAxMywxOTQ5Nzg4ODQ0LC0xNz
 kwMDA0ODQ3LC02NzUyNTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1
 NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ
 ==
