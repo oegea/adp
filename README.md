@@ -58,9 +58,11 @@ The UPDATE CLIENT is an application that connects to the UPDATE AUTHORITY to che
 
 ### APPLICATION SERVICE
 
-The APPLICATION SERVICE is a URI where there are details specified about the application to update. The APPLICATION SERVICE is always checked by the UPDATE CLIENT to know the ADP version the application is using,  the URI where the UPDATE AUTHORITY can be reached, and the current installed version.
+The APPLICATION SERVICE is a URI where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to know the ADP version the application is using,  the URI where the UPDATE AUTHORITY can be reached, and the current installed version.
 
 ## Operations 
+
+
 
 ### Overall Process Overview
 
@@ -91,6 +93,6 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMDgyMTMxNywxMTE1OTg0NTcyLC0zMj
-MwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
+eyJoaXN0b3J5IjpbLTE0ODkyMjY4NjIsMTExNTk4NDU3MiwtMz
+IzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNzUzNF19
 -->
