@@ -83,7 +83,12 @@ The UPDATE CLIENT will then do an HTTPS GET request to the indicated URI. In res
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
+The provided JSON MUST use these parameter names:
 
+```json
+{
+}
+```
 
 ### Overall Process Overview
 
@@ -114,7 +119,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDgxNTI3OSwxOTQ5Nzg4ODQ0LC0xNz
+eyJoaXN0b3J5IjpbLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNz
 kwMDA0ODQ3LC02NzUyNTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1
 NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ
 ==
