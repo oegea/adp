@@ -84,15 +84,16 @@ The UPDATE CLIENT will then do an HTTPS GET request to the indicated URI. In res
 This request MUST NOT require the usage of authentication mechanisms. 
 
 The returned JSON MUST follow the following format:
-
-*Values are provided *
 ```json
 {
 	"protocolVersion": "1.0",
 	"applicationVersion": "3.5-beta",
-	"updateAuthorityUrl": ""
+	"updateAuthorityUrl": "https://mydomain.com/adp/myproduct/"
 }
 ```
+*Values are provided as examples.*
+
+Note that the current installed version M
 
 ### Overall Process Overview
 
@@ -123,8 +124,8 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0Mjk1NzA3MCwtMzIwNDY1NTg1LDE5ND
-k3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQw
-OTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLT
-YwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbLTEyODg1NjY3MDIsLTMyMDQ2NTU4NSwxOT
+Q5Nzg4ODQ0LC0xNzkwMDA0ODQ3LC02NzUyNTQ1MTUsNTMwMjU0
+MDk0LDExMTU5ODQ1NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC
+02MDM0MTc1MzRdfQ==
 -->
