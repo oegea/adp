@@ -99,7 +99,7 @@ Note that the current installed version, contained inside `applicationVersion` M
 
 ### Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
 
-The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be used to ensure two main verifications:
+The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be used to perform two main verifications:
 
  1. That the APPLICATION SERVICE protocol version and the UPDATE AUTHORITY protocol version match.
  2. 
@@ -134,8 +134,9 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOT
-Q2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAw
-NDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC
-0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
+eyJoaXN0b3J5IjpbMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNj
+U0OTI5MTgzLC05NDYzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4
+ODQ0LC0xNzkwMDA0ODQ3LC02NzUyNTQ1MTUsNTMwMjU0MDk0LD
+ExMTU5ODQ1NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0
+MTc1MzRdfQ==
 -->
