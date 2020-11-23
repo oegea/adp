@@ -56,11 +56,11 @@ The UPDATE AUTHORITY is a remote actor which goal is to provide to the UPDATE CL
 
 The UPDATE CLIENT is an application that connects to the UPDATE AUTHORITY to check if new version is available, and download it if needed. 
 
-Depending on how the UPDATE CLIENT has been engineered, it MAY handle more than one software application at the same client instance, without needing to install various instances of those UPDATE CLIENT.
+The UPDATE CLIENT MAY handle more than one software application at the same instance, allowing the end user to manage all their software updates from one single place.
 
 ### APPLICATION SERVICE
 
-The APPLICATION SERVICE is a URI where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to know the ADP version the application is using,  the URI where the UPDATE AUTHORITY can be reached, and the current installed version.
+The APPLICATION SERVICE is a URI where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to do th.
 
 ## Operations 
 
@@ -99,7 +99,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzAzMTM1MTgsNTMwMjU0MDk0LDExMT
-U5ODQ1NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1
-MzRdfQ==
+eyJoaXN0b3J5IjpbMjM1OTYwODMxLDUzMDI1NDA5NCwxMTE1OT
+g0NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0
+XX0=
 -->
