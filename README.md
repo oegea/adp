@@ -20,7 +20,7 @@ Although this is not an IETF document, the key words "MUST", "MUST NOT", "REQUIR
  - **Operation**: Actors participate in operations to achieve their specific goals. An operation is a logic flow in which one or more actors are involved. 
  - **Remote**: Anything will be considered remote if it is placed on a location different than the APPLICATION SERVICE. This would often apply to remote actors, which will normally communicate with local actors through the Internet.
  - **Local**: Anything will be considered local if it is placed on the same location than the APPLICATION SERVICE. Local actors will communicate between them over the local network.
- - **End-user**: The person who will interact with the system, regardless of whether it 
+ - **End-user**: Any person who interacts with one or more actors.
 
 ## Intended Public
 
@@ -73,7 +73,9 @@ ADP is divided in three main operations:
 
 ### UPDATE CLIENT configuration
 
-The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end user will provide to the UPDATE CLIENT the URI where the APPLICATION SERVICE. Through this URL, 
+The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end-user will provide to the UPDATE CLIENT the URI where the APPLICATION SERVICE can be reached. Through this URL, the UPDATE CLIENT will receive: 
+
+ 1. The URL of the
 
 ### Overall Process Overview
 
@@ -104,7 +106,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NjA4NDkyNCwtMTc5MDAwNDg0NywtNj
+eyJoaXN0b3J5IjpbMTc2Mjc1NzcyNiwtMTc5MDAwNDg0NywtNj
 c1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMwNjE1
 NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
