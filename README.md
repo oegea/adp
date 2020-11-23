@@ -83,6 +83,8 @@ The UPDATE CLIENT will then do an HTTPS GET request to the indicated URI. In res
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
+The data MUST be formatted with
+
 ### Overall Process Overview
 
 These are main actions of ADP expressed on a flowchart indicating also who is the actor responsible for start each of them:
@@ -112,8 +114,8 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MjU5MzAxMywxOTQ5Nzg4ODQ0LC0xNz
-kwMDA0ODQ3LC02NzUyNTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1
-NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ
-==
+eyJoaXN0b3J5IjpbLTIwMDU4Mjc5ODIsMTk0OTc4ODg0NCwtMT
+c5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0
+NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX
+0=
 -->
