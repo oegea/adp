@@ -68,8 +68,8 @@ The APPLICATION SERVICE is a URL where there are details specified about the app
 ADP is divided in three main operations:
 
  - **UPDATE CLIENT configuration.**
- - **Available updates check and download.**
  - **Handshake between the UPDATE CLIENT and UPDATE AUTHORITY.**
+ - **Available updates check and download.**
 
 ### UPDATE CLIENT configuration
 
@@ -94,10 +94,6 @@ The returned JSON MUST follow the following format:
 *Values are provided as examples.*
 
 Note that the current installed version, contained inside `applicationVersion` MAY be represented on any desired format.
-
-### Available updates check and download
-
-
 
 ### Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
 
@@ -129,6 +125,10 @@ To perform the protocol version checking, the UPDATE CLIENT MAY get the APPLICAT
 If one of the actors is using a different ADP version, or an ADP version not implemented by the UPDATE CLIENT, the handshake MUST be terminated showing an error, and any update operation MUST NOT be continued.
 
 Note that the UPDATE CLIENT MAY use any desired mechanism to retrieve credentials, in case that authentication is required by the UPDATE AUTHORITY. The way the credentials can be retrieved or asked to the end-user is out of the scope of this document.
+
+### Available updates check and download
+
+
  
 ### Overall Process Overview
 
@@ -159,10 +159,10 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTk5OTk3OTEsLTE3MTYyMzc2NzYsMT
-IwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5
-MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4ND
-QsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTEx
-NTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNz
-UzNF19
+eyJoaXN0b3J5IjpbLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMj
+A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
+OTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NC
+wtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1
+OTg0NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NT
+M0XX0=
 -->
