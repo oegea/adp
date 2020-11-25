@@ -97,6 +97,8 @@ Note that the current installed version, contained inside `applicationVersion` M
 
 ### Available updates check and download
 
+
+
 ### Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
 
 The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be used to perform two main verifications:
@@ -121,6 +123,8 @@ The returned JSON MUST follow the following format:
 *Values are provided as examples.*
 
 Once the UPDATE CLIENT receives the response, it will MUST check that the value of the "protocolVersion" parameter matches with the APPLICATION SERVICE protocol version. If one of the actors is using a different ADP version, or an ADP not implemented by the UPDATE CLIENT, the handshake MUST be terminated showing an error, and any update operation MUST NOT be continued.
+
+If authentication is required, then th
  
 ### Overall Process Overview
 
@@ -151,10 +155,10 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTU0ODIzOSwtMTcxNjIzNzY3NiwxMj
-A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
-OTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NC
-wtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1
-OTg0NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NT
-M0XX0=
+eyJoaXN0b3J5IjpbNzIxOTEwMzAyLC0xNzE2MjM3Njc2LDEyMD
+Y0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5
+MTgzLC05NDYzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC
+0xNzkwMDA0ODQ3LC02NzUyNTQ1MTUsNTMwMjU0MDk0LDExMTU5
+ODQ1NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1Mz
+RdfQ==
 -->
