@@ -120,7 +120,6 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
  
-
 ### Overall Process Overview
 
 These are main actions of ADP expressed on a flowchart indicating also who is the actor responsible for start each of them:
@@ -150,7 +149,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQ3MTcyMTAsMTIwNjQxNjQ2NywxND
+eyJoaXN0b3J5IjpbLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxND
 AzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMy
 MDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAwMDQ4ND
 csLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIz
