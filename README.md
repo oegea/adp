@@ -120,7 +120,7 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-Once the UPDATE CLIENT receives the response, it will MUST check that the value of the "protocolVersion" parameter matches with the APPLICATION SERVICE protocol version. 
+Once the UPDATE CLIENT receives the response, it MUST check that the value of the "protocolVersion" parameter matches with the APPLICATION SERVICE protocol version. 
 
 To perform the protocol version checking, the UPDATE CLIENT MAY get the APPLICATION SERVICE protocol version by performing the same HTTPS request than the described in "UPDATE CLIENT configuration" operation.
 
@@ -130,16 +130,17 @@ Note that the UPDATE CLIENT MAY use any desired mechanism to retrieve credential
 
 ### Available updates check and download
 
-The available updates check and download is intended to be used to achieve one of these two goals:
+This operation is intended to be used to achieve one of these two goals:
 
- 1. Check if there is a new version available and ready to be downloaded.
+ 1. Check if there is a new version available and ready to be downloaded, and display a notification to alert the end-user.
  2. If authentication is required to get latest versions list.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0Nz
-MyNjcsLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3
-LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOT
-Q2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAw
-NDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC
-0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
+eyJoaXN0b3J5IjpbMTE3OTQwNjAyOSw1MDQ3NzA0OTksMzMwMD
+gxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2
+LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNj
+U0OTI5MTgzLC05NDYzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4
+ODQ0LC0xNzkwMDA0ODQ3LC02NzUyNTQ1MTUsNTMwMjU0MDk0LD
+ExMTU5ODQ1NzIsLTMyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0
+MTc1MzRdfQ==
 -->
