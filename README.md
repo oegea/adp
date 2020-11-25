@@ -120,7 +120,7 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-Once the UPDATE CLIENT receives the response, it will MUST check that the value of the "protocolVersion" parameter matches with the APPLICATION SERVICE protocol version. If one of the actors is using a different ADP version, or an ADP not implemented on the UPDATE CLIENT, the handshake MUST be terminated showing an error, 
+Once the UPDATE CLIENT receives the response, it will MUST check that the value of the "protocolVersion" parameter matches with the APPLICATION SERVICE protocol version. If one of the actors is using a different ADP version, or an ADP not implemented by the UPDATE CLIENT, the handshake MUST be terminated showing an error, and any update operation MUST NOT be continued.
  
 ### Overall Process Overview
 
@@ -151,7 +151,7 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNzcxNTAwNCwtMTcxNjIzNzY3NiwxMj
+eyJoaXN0b3J5IjpbLTcxMTU0ODIzOSwtMTcxNjIzNzY3NiwxMj
 A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
 OTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NC
 wtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1
