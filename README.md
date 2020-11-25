@@ -127,12 +127,17 @@ If one of the actors is using a different ADP version, or an ADP version not imp
 Note that the UPDATE CLIENT MAY use any desired mechanism to retrieve credentials, in case that authentication is required by the UPDATE AUTHORITY. The way the credentials can be retrieved or asked to the end-user is out of the scope of this document.
 
 ### Available updates check and download
-TBD...
+
+The available updates check and download is intended to be used to achieve one of these two goals:
+
+ 1. Check if there is a new version available and ready to be download.
+ 2. If authentication is required to get latest versions list.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOT
-M3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4
-NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC05NDYzMjA0ODAsLT
-MyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkwMDA0ODQ3LC02NzUy
-NTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1NzIsLTMyMzA2MTU3Ni
-wxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ==
+eyJoaXN0b3J5IjpbLTIyMzIzMjk1NiwzMzAwODE5MjAsLTk4ND
+czMjY3LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2
+NywxNDAzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLT
+k0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAw
+MDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3Mi
+wtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNzUzNF19
 -->
