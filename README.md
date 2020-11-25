@@ -120,7 +120,7 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-Once the UPDATE CLIENT receives the response, it will
+Once the UPDATE CLIENT receives the response, it will have to check that the value of the "protocolVersion" parameter, matches with the APPLICATION SERVICE protocol version. If one of the actors is using a different ADP version, or an ADP not impleme
  
 ### Overall Process Overview
 
@@ -151,10 +151,10 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODI1NTM5MzMsLTE3MTYyMzc2NzYsMT
-IwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5
-MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4ND
-QsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTEx
-NTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNz
-UzNF19
+eyJoaXN0b3J5IjpbLTY4MjQ4OTYxOCwtMTcxNjIzNzY3NiwxMj
+A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
+OTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NC
+wtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1
+OTg0NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NT
+M0XX0=
 -->
