@@ -75,6 +75,8 @@ ADP is divided in three main operations:
 
 The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end-user will provide to the UPDATE CLIENT with the URL with which to access the APPLICATION SERVICE. 
 
+Additionally, the UPDATE CLIENT MAY ask the end-user if 
+
 The UPDATE CLIENT will then do an HTTPS GET request to the indicated URL. In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
 
  1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named "protocolVersion".
@@ -130,11 +132,11 @@ Note that the UPDATE CLIENT MAY use any desired mechanism to retrieve credential
 
 The available updates check and download is intended to be used to achieve one of these two goals:
 
- 1. Check if there is a new version available and ready to be download.
+ 1. Check if there is a new version available and ready to be downloaded.
  2. If authentication is required to get latest versions list.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMzIzMjk1NiwzMzAwODE5MjAsLTk4ND
+eyJoaXN0b3J5IjpbMTk2MjAxNjQ2MSwzMzAwODE5MjAsLTk4ND
 czMjY3LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2
 NywxNDAzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLT
 k0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAw
