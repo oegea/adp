@@ -93,7 +93,7 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-Note that the current installed version, contained inside `applicationVersion` MAY be represented on any desired format.
+Note that the current installed version, contained inside `applicationVersion` MAY be represented on any desired format as long as it is contained inside a string.
 
 ### Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
 
@@ -159,10 +159,10 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMj
-A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
-OTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NC
-wtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1
-OTg0NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NT
-M0XX0=
+eyJoaXN0b3J5IjpbLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MT
+YyMzc2NzYsMTIwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYy
+MjA4LDE2NTQ5MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LD
+E5NDk3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAy
+NTQwOTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MT
+QsLTYwMzQxNzUzNF19
 -->
