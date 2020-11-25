@@ -104,7 +104,7 @@ The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be u
  1. That the APPLICATION SERVICE protocol version and the UPDATE AUTHORITY protocol version match.
  2. If authentication is required to get latest versions list.
 
-To perform this operation, 
+To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY url, adding `ha
  
 
 ### Overall Process Overview
@@ -136,9 +136,9 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU1NDgyNjY1LDEyMDY0MTY0NjcsMTQwMz
-I4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC05NDYzMjA0
-ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkwMDA0ODQ3LC
-02NzUyNTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1NzIsLTMyMzA2
-MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ==
+eyJoaXN0b3J5IjpbLTI2OTQ4MTcyNSwxMjA2NDE2NDY3LDE0MD
+MyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIw
+NDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAwNDg0Ny
+wtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMw
+NjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
