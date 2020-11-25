@@ -107,7 +107,7 @@ The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be u
 To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY URL, it MUST add `handshake/`to the end of the URL. In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
- 2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "authenticati
+ 2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "req
  
 
 ### Overall Process Overview
@@ -139,9 +139,9 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODQ1MDYyMywxMjA2NDE2NDY3LDE0MD
-MyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIw
-NDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAwNDg0Ny
-wtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMw
-NjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
+eyJoaXN0b3J5IjpbMTU4NzE5ODg4LDEyMDY0MTY0NjcsMTQwMz
+I4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC05NDYzMjA0
+ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkwMDA0ODQ3LC
+02NzUyNTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1NzIsLTMyMzA2
+MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ==
 -->
