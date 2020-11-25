@@ -124,7 +124,9 @@ The returned JSON MUST follow the following format:
 
 Once the UPDATE CLIENT receives the response, it will MUST check that the value of the "protocolVersion" parameter matches with the APPLICATION SERVICE protocol version. If one of the actors is using a different ADP version, or an ADP version not implemented by the UPDATE CLIENT, the handshake MUST be terminated showing an error, and any update operation MUST NOT be continued.
 
-In case authentication is required, note that the UPDATE CLIENT MAY use any desired mechanism to retrieve the credentials. The way the credentials can be retrieved or asked to the end-user is out o
+To perform that checkin
+
+Note that the UPDATE CLIENT MAY use any desired mechanism to retrieve credentials, in case that authentication is required by the UPDATE AUTHORITY. The way the credentials can be retrieved or asked to the end-user is out of the scope of this document.
  
 ### Overall Process Overview
 
@@ -155,10 +157,10 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjgzNzYyNjksLTE3MTYyMzc2NzYsMT
-IwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5
-MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4ND
-QsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTEx
-NTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNz
-UzNF19
+eyJoaXN0b3J5IjpbMTY5NTYxOTE0OCwtMTcxNjIzNzY3NiwxMj
+A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
+OTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NC
+wtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1
+OTg0NTcyLC0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NT
+M0XX0=
 -->
