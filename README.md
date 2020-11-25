@@ -127,42 +127,12 @@ If one of the actors is using a different ADP version, or an ADP version not imp
 Note that the UPDATE CLIENT MAY use any desired mechanism to retrieve credentials, in case that authentication is required by the UPDATE AUTHORITY. The way the credentials can be retrieved or asked to the end-user is out of the scope of this document.
 
 ### Available updates check and download
-
-
- 
-### Overall Process Overview
-
-These are main actions of ADP expressed on a flowchart indicating also who is the actor responsible for start each of them:
-
->Operations are represented as squares, conditions as rhombus.
-
-```mermaid
-graph TB
-A[UPDATE CLIENT: Retrieve APPLICATION SERVICE data] -- Link text --> B[UPDATE CLIENT: Handshake with UPDATE AUTHORITY]
-B --> D{ADP version mismatch?}
-```
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
+TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MT
-YyMzc2NzYsMTIwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYy
-MjA4LDE2NTQ5MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LD
-E5NDk3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAy
-NTQwOTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MT
-QsLTYwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOT
+M3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4
+NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC05NDYzMjA0ODAsLT
+MyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkwMDA0ODQ3LC02NzUy
+NTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1NzIsLTMyMzA2MTU3Ni
+wxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ==
 -->
