@@ -132,11 +132,10 @@ Note that the UPDATE CLIENT MAY use any desired mechanism to retrieve credential
 
 This operation is intended to be used to achieve one of these two goals:
 
- 1. Check if there is a new version available and ready to be downloaded, and display a notification to alert the end-user.
- 2. If authentication is required to get latest versions list.
-
+ 1. Check if there is a new version available, and display a notification to alert the end-user.
+ 2. Download 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3OTQwNjAyOSw1MDQ3NzA0OTksMzMwMD
+eyJoaXN0b3J5IjpbLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMD
 gxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2
 LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNj
 U0OTI5MTgzLC05NDYzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4
