@@ -119,6 +119,8 @@ The returned JSON MUST follow the following format:
 }
 ```
 *Values are provided as examples.*
+
+Once the UPDATE CLIENT receives the response, it will
  
 ### Overall Process Overview
 
@@ -149,9 +151,10 @@ Alice->John: Yes... John, how are you?
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxND
-AzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMy
-MDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAwMDQ4ND
-csLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIz
-MDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNzUzNF19
+eyJoaXN0b3J5IjpbLTE0ODI1NTM5MzMsLTE3MTYyMzc2NzYsMT
+IwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5
+MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4ND
+QsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTEx
+NTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5MTc5MTQsLTYwMzQxNz
+UzNF19
 -->
