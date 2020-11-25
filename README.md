@@ -75,7 +75,7 @@ ADP is divided in three main operations:
 
 The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end-user will provide to the UPDATE CLIENT with the URL with which to access the APPLICATION SERVICE. 
 
-Additionally, the UPDATE CLIENT MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is s the UPDATE
+Additionally, the UPDATE CLIENT MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the UPDATE CLIENT SHOULD only install stable versions.
 
 The UPDATE CLIENT will then do an HTTPS GET request to the indicated URL. In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
 
@@ -136,10 +136,10 @@ The available updates check and download is intended to be used to achieve one o
  2. If authentication is required to get latest versions list.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcxNDYwMjAsMzMwMDgxOTIwLC05ODQ3Mz
-I2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0Njcs
-MTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC05ND
-YzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkwMDA0
-ODQ3LC02NzUyNTQ1MTUsNTMwMjU0MDk0LDExMTU5ODQ1NzIsLT
-MyMzA2MTU3NiwxNDk5OTE3OTE0LC02MDM0MTc1MzRdfQ==
+eyJoaXN0b3J5IjpbNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0Nz
+MyNjcsLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3
+LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOT
+Q2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAw
+NDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC
+0zMjMwNjE1NzYsMTQ5OTkxNzkxNCwtNjAzNDE3NTM0XX0=
 -->
