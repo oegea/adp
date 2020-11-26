@@ -155,15 +155,16 @@ Each item contained on the "latestVersions" parameter MUST have this data struct
  2. isStable
  3. downloadUrl
  4. requiresAuthentication
- 5. release
+ 5. releaseNotes
+ 6. releaseDate
 
 This request MAY require the usage of authentication mechanisms. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDIwMjAzODQsMTM2OTA2MTQyNSwtMT
-A2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3MDEsNTA0Nzcw
-NDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMT
-cxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgw
-NjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1OD
-UsMTk0OTc4ODg0NCwtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUz
-MDI1NDA5NF19
+eyJoaXN0b3J5IjpbLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNj
+gwMTIxMzcsLTg1ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3MDQ5
+OSwzMzAwODE5MjAsLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MT
+YyMzc2NzYsMTIwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYy
+MjA4LDE2NTQ5MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LD
+E5NDk3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNSw1MzAy
+NTQwOTRdfQ==
 -->
