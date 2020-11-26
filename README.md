@@ -140,19 +140,19 @@ This operation is intended to be used to achieve one of these two goals:
 
 At the beginning of this operation, the UPDATE CLIENT will first perform the "Handshake between the UPDATE CLIENT and UPDATE AUTHORITY" operation.
 
-If the handthe UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY URL. In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
+If the handshake is success, the UPDATE CLIENT will perform an HTTPS GET request to the versions list URL. In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
  2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "requiresAuthentication".
  3. The URL where versions list can be found. This MUST be contained inside a string parameter named "versionsListUrl".
 
-This request MUST NOT require the usage of authentication mechanisms. 
+This request MAY require the usage of authentication mechanisms. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3Nzk5MjI1NiwxMzY5MDYxNDI1LC0xMD
-Y4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0
-OTksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNz
-E2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2
-MjIwOCwxNjU0OTI5MTgzLC05NDYzMjA0ODAsLTMyMDQ2NTU4NS
-wxOTQ5Nzg4ODQ0LC0xNzkwMDA0ODQ3LC02NzUyNTQ1MTUsNTMw
-MjU0MDk0XX0=
+eyJoaXN0b3J5IjpbLTExNjcwMjY1NjMsMTM2OTA2MTQyNSwtMT
+A2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3MDEsNTA0Nzcw
+NDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMT
+cxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgw
+NjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1OD
+UsMTk0OTc4ODg0NCwtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUz
+MDI1NDA5NF19
 -->
