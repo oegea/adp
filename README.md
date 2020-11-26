@@ -149,15 +149,21 @@ In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the f
 
 Each item contained on the "latestVersions" parameter MUST be an object.
 
+Each item contained on the "latestVersions" parameter MUST have this data structure:
 
+ 1. applicationVersion
+ 2. isStable
+ 3. downloadUrl
+ 4. requiresAuthentication
+ 5. release
 
 This request MAY require the usage of authentication mechanisms. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNTU5NjE5OCwxMzY5MDYxNDI1LC0xMD
-Y4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0
-OTksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNz
-E2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2
-MjIwOCwxNjU0OTI5MTgzLC05NDYzMjA0ODAsLTMyMDQ2NTU4NS
-wxOTQ5Nzg4ODQ0LC0xNzkwMDA0ODQ3LC02NzUyNTQ1MTUsNTMw
-MjU0MDk0XX0=
+eyJoaXN0b3J5IjpbLTEwNDIwMjAzODQsMTM2OTA2MTQyNSwtMT
+A2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3MDEsNTA0Nzcw
+NDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMT
+cxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgw
+NjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1OD
+UsMTk0OTc4ODg0NCwtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUz
+MDI1NDA5NF19
 -->
