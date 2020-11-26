@@ -156,7 +156,7 @@ In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the f
 Each item contained on the `latestVersions` parameter MUST be an object and  MUST be conformed by this data structure:
 
  1. Name or identifier of the version. This MUST be contained inside a string parameter named `applicationVersion`.
- 2. If the version is considered stable or not. This MUST be contained inside a boolean parameter named `isStable"`
+ 2. If the version is considered stable or not. This MUST be contained inside a boolean parameter named `isStable`
  3. URL from where the version can be downloaded. This MUST be contained inside a string parameter named `downloadUrl`.
  4. If user and password are required to download the version. This MUST be contained inside a boolean parameter named `requiresAuthentication`.
  5. Description about the changes contained in the version. This MUST be contained inside a string parameter named `releaseNotes`.
@@ -168,7 +168,7 @@ The returned JSON MUST follow the following format:
 
 TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MjUwNDM2NSwxMTgyMzA3NzgyLDE1ND
+eyJoaXN0b3J5IjpbMTkyNTk0MjI1OSwxMTgyMzA3NzgyLDE1ND
 U4NjkwMzQsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNjgwMTIx
 MzcsLTg1ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3MDQ5OSwzMz
 AwODE5MjAsLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MTYyMzc2
