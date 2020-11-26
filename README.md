@@ -156,17 +156,17 @@ Each item contained on the "latestVersions" parameter MUST have this data struct
  3. URL from where the version can be downloaded. This MUST be contained inside a string parameter named "downloadUrl".
  4. If user and password are required to download the version. This MUST be contained inside a boolean parameter named "requiresAuthentication".
  5. Description about the changes contained in the version. This MUST be contained inside a string parameter named "releaseNotes".
- 6. releaseDate
+ 6. Date of public. This releaseDate
 
 Note that the name or identifier of the version, contained inside `applicationVersion` MAY be represented on any desired format as long as it is contained inside a string.
 
 This request MAY require the usage of authentication mechanisms. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NTg2OTAzNCwtMTI3NTI2MTQsMTM2OT
-A2MTQyNSwtMTA2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3
-MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MD
-kzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIy
-ODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIwNDgwLC
-0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAwNDg0NywtNjc1
-MjU0NTE1XX0=
+eyJoaXN0b3J5IjpbMjAwNjg3MTY5NCwxNTQ1ODY5MDM0LC0xMj
+c1MjYxNCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3
+NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05OD
+Q3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0
+NjcsMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC
+05NDYzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkw
+MDA0ODQ3XX0=
 -->
