@@ -140,7 +140,7 @@ This operation is intended to be used to achieve one of these two goals:
 
 At the beginning of this operation, the UPDATE CLIENT will first perform the "Handshake between the UPDATE CLIENT and UPDATE AUTHORITY" operation.
 
-If the handshake is success, the UPDATE CLIENT will perform an HTTPS GET request to the versions list URL. Those URL SHOULD be taken from the information retrieved during the handshake.
+If the handshake is success, the UPDATE CLIENT MUST perform an HTTPS GET request to the versions list URL. That URL SHOULD be taken from the information obtained from the UPDATE AUTHORITY, during the handshake operation.
 
 In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
@@ -150,7 +150,7 @@ In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the f
 
 This request MAY require the usage of authentication mechanisms. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjU4NTQ5NiwxMzY5MDYxNDI1LC0xMD
+eyJoaXN0b3J5IjpbMTc2NTkyNzkzMywxMzY5MDYxNDI1LC0xMD
 Y4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0
 OTksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNz
 E2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2
