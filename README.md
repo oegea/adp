@@ -83,9 +83,9 @@ This request MUST NOT require the usage of authentication mechanisms.
 
 In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
 
- 1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named "protocolVersion".
- 2. Current installed version. This MUST be contained inside a string parameter named "applicationVersion".
- 3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUrl".
+ 1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named `protocolVersion`.
+ 2. Current installed version. This MUST be contained inside a string parameter named `applicationVersion`.
+ 3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
 
 The returned JSON MUST follow the following format:
 ```json
@@ -113,8 +113,8 @@ This request MUST NOT require the usage of authentication mechanisms.
 
 In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
- 1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
- 2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "requiresAuthentication".
+ 1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named `protocolVersion"`
+ 2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named `requiresAuthentication".
  3. The URL where versions list can be found. This MUST be contained inside a string parameter named "versionsListUrl".
 
 The returned JSON MUST follow the following format:
@@ -166,13 +166,15 @@ Each item contained on the "latestVersions" parameter MUST have this data struct
 
 Note that the name or identifier of the version, contained inside `applicationVersion` MAY be represented on any desired format as long as it is contained inside a string.
 
+The returned JSON MUST follow the following format:
 
+TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMj
-c1MjYxNCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3
-NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05OD
-Q3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0
-NjcsMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC
-05NDYzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkw
-MDA0ODQ3XX0=
+eyJoaXN0b3J5IjpbLTUxNTA2NTc4NywxMTgyMzA3NzgyLDE1ND
+U4NjkwMzQsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNjgwMTIx
+MzcsLTg1ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3MDQ5OSwzMz
+AwODE5MjAsLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MTYyMzc2
+NzYsMTIwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYyMjA4LD
+E2NTQ5MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5NDk3
+ODg4NDRdfQ==
 -->
