@@ -77,13 +77,15 @@ The first step on ADP is to configure the UPDATE CLIENT. In this operation, the 
 
 Additionally, the UPDATE CLIENT MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the UPDATE CLIENT SHOULD only install stable versions.
 
-The UPDATE CLIENT will then do an HTTPS GET request to the indicated URL. In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
+The UPDATE CLIENT will then do an HTTPS GET request to the indicated URL. 
+
+This request MUST NOT require the usage of authentication mechanisms. 
+
+In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
 
  1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named "protocolVersion".
  2. Current installed version. This MUST be contained inside a string parameter named "applicationVersion".
  3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUrl".
-
-This request MUST NOT require the usage of authentication mechanisms. 
 
 The returned JSON MUST follow the following format:
 ```json
@@ -105,13 +107,15 @@ The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be u
  2. If authentication is required to get latest versions list.
  3. Which is the URL from where the latest versions list can be retrieved.
 
-To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY URL. In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
+To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY URL. 
+
+This request MUST NOT require the usage of authentication mechanisms. 
+
+In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
  2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "requiresAuthentication".
  3. The URL where versions list can be found. This MUST be contained inside a string parameter named "versionsListUrl".
-
-This request MUST NOT require the usage of authentication mechanisms. 
 
 The returned JSON MUST follow the following format:
 ```json
@@ -164,11 +168,11 @@ Note that the name or identifier of the version, contained inside `applicationVe
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjA5Mzk4NzgsMTU0NTg2OTAzNCwtMT
-I3NTI2MTQsMTM2OTA2MTQyNSwtMTA2ODAxMjEzNywtODU4MDMx
-NzU2LC05NzU5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOT
-g0NzMyNjcsLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2
-NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4My
-wtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5
-MDAwNDg0N119
+eyJoaXN0b3J5IjpbMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMj
+c1MjYxNCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3
+NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05OD
+Q3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0
+NjcsMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC
+05NDYzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkw
+MDA0ODQ3XX0=
 -->
