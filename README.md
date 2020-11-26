@@ -145,12 +145,15 @@ If the handshake is success, the UPDATE CLIENT MUST perform an HTTPS GET request
 In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
- 2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "requiresAuthentication".
- 3. The URL where versions list can be found. This MUST be contained inside a string parameter named "versionsListUrl".
+ 2. List of latest versions. This MUST be contained inside an array parameter named "latestVersions".
+
+Each item contained on the "latestVersions" parameter MUST be an object.
+
+
 
 This request MAY require the usage of authentication mechanisms. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTkyNzkzMywxMzY5MDYxNDI1LC0xMD
+eyJoaXN0b3J5IjpbMTUzNTU5NjE5OCwxMzY5MDYxNDI1LC0xMD
 Y4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0
 OTksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNz
 E2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2
