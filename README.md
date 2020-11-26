@@ -81,7 +81,7 @@ The UPDATE CLIENT will then do an HTTPS GET request to the indicated URL. In res
 
  1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named "protocolVersion".
  2. Current installed version. This MUST be contained inside a string parameter named "applicationVersion".
- 3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUrl" and MUST end with a slash "/".
+ 3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUrl".
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -109,7 +109,7 @@ To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request t
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
  2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "requiresAuthentication".
- 3. The URL 
+ 3. The URL where versions list can be found. This MUST be contained inside a string parameter named "updateAuthorityUrl".
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -139,7 +139,7 @@ This operation is intended to be used to achieve one of these two goals:
 
 TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTI1NjY0NywtODU4MDMxNzU2LC05Nz
+eyJoaXN0b3J5IjpbLTg1Mzg4ODIwMiwtODU4MDMxNzU2LC05Nz
 U5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcs
 LTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MD
 MyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIw
