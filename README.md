@@ -114,8 +114,8 @@ This request MUST NOT require the usage of authentication mechanisms.
 In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named `protocolVersion"`
- 2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named `requiresAuthentication".
- 3. The URL where versions list can be found. This MUST be contained inside a string parameter named "versionsListUrl".
+ 2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named `requiresAuthentication`.
+ 3. The URL where versions list can be found. This MUST be contained inside a string parameter named `versionsListUrl`.
 
 The returned JSON MUST follow the following format:
 ```json
@@ -127,9 +127,9 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-Once the UPDATE CLIENT receives a response, it MUST check that the value of the "protocolVersion" parameter matches with the APPLICATION SERVICE protocol version. 
+Once the UPDATE CLIENT receives a response, it MUST check that the value of the `protocolVersion` parameter matches with the APPLICATION SERVICE protocol version. 
 
-To perform the protocol version checking, the UPDATE CLIENT MAY get the APPLICATION SERVICE protocol version by performing the same HTTPS request than the described in "UPDATE CLIENT configuration" operation.
+To perform the protocol version checking, the UPDATE CLIENT MAY get the APPLICATION SERVICE protocol version by performing the same HTTPS request than the described in `UPDATE CLIENT configuration` operation.
 
 If one of the actors is using a different ADP version, or an ADP version not implemented by the UPDATE CLIENT, the handshake MUST be terminated showing an error, and any update operation MUST NOT be continued.
 
@@ -142,7 +142,7 @@ This operation is intended to be used to achieve one of these two goals:
  1. Check if there is a new version available, and display a notification to alert the end-user.
  2. Download new available versions as needed.
 
-At the beginning of this operation, the UPDATE CLIENT will first perform the "Handshake between the UPDATE CLIENT and UPDATE AUTHORITY" operation.
+At the beginning of this operation, the UPDATE CLIENT will first perform the `Handshake between the UPDATE CLIENT and UPDATE AUTHORITY` operation.
 
 If the handshake is success, the UPDATE CLIENT MUST perform an HTTPS GET request to the versions list URL. That URL SHOULD be taken from the information obtained from the UPDATE AUTHORITY, during the handshake operation.
 
@@ -150,12 +150,10 @@ This request MAY require the usage of authentication mechanisms.
 
 In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
- 1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
- 2. List of latest versions. This MUST be contained inside an array parameter named "latestVersions".
+ 1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named `protocolVersion"`
+ 2. List of latest versions. This MUST be contained inside an array parameter named `latestVersions`.
 
-Each item contained on the "latestVersions" parameter MUST be an object.
-
-Each item contained on the "latestVersions" parameter MUST have this data structure:
+Each item contained on the `latestVersions` parameter MUST be an object and  MUST be conformed by this data structure:
 
  1. Name or identifier of the version. This MUST be contained inside a string parameter named "applicationVersion".
  2. If the version is considered stable or not. This MUST be contained inside a boolean parameter named "isStable".
@@ -170,7 +168,7 @@ The returned JSON MUST follow the following format:
 
 TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTA2NTc4NywxMTgyMzA3NzgyLDE1ND
+eyJoaXN0b3J5IjpbMTA2NjY2MDk2NSwxMTgyMzA3NzgyLDE1ND
 U4NjkwMzQsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNjgwMTIx
 MzcsLTg1ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3MDQ5OSwzMz
 AwODE5MjAsLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MTYyMzc2
