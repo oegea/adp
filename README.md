@@ -80,8 +80,8 @@ Additionally, the UPDATE CLIENT MAY ask at this point to the end-user if non-sta
 The UPDATE CLIENT will then do an HTTPS GET request to the indicated URL. In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
 
  1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named "protocolVersion".
- 2. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUrl" and MUST end with a slash "/".
- 3. Current installed version. This MUST be contained inside a string parameter named "applicationVersion".
+ 2. Current installed version. This MUST be contained inside a string parameter named "applicationVersion".
+ 3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named "updateAuthorityUrl" and MUST end with a slash "/".
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -103,12 +103,13 @@ The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be u
 
  1. That the APPLICATION SERVICE protocol version and the UPDATE AUTHORITY protocol version match.
  2. If authentication is required to get latest versions list.
- 3. Which is the UR
+ 3. Which is the URL where the latest versions list can be found.
 
-To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY URL, it MUST add `handshake/`to the end of the URL. In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
+To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY URL. In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
  2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "requiresAuthentication".
+ 3. The URL 
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -138,7 +139,7 @@ This operation is intended to be used to achieve one of these two goals:
 
 TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDQ1MDk5MCwtODU4MDMxNzU2LC05Nz
+eyJoaXN0b3J5IjpbMTg5MTI1NjY0NywtODU4MDMxNzU2LC05Nz
 U5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcs
 LTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MD
 MyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIw
