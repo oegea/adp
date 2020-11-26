@@ -138,13 +138,13 @@ This operation is intended to be used to achieve one of these two goals:
  1. Check if there is a new version available, and display a notification to alert the end-user.
  2. Download new available versions as needed.
 
-TBD...
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOT
-c1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3
-LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxND
-AzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMy
-MDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAwMDQ4ND
-csLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIz
-MDYxNTc2XX0=
+eyJoaXN0b3J5IjpbMTU5MTQwMTgzOSwtMTA2ODAxMjEzNywtOD
+U4MDMxNzU2LC05NzU5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTky
+MCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMj
+A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
+OTE4MywtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NC
+wtMTc5MDAwNDg0NywtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1
+OTg0NTcyXX0=
 -->
