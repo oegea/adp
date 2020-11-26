@@ -99,10 +99,11 @@ Note that the current installed version, contained inside `applicationVersion` M
 
 ### Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
 
-The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be used to perform two main verifications:
+The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be used to perform three main verifications:
 
  1. That the APPLICATION SERVICE protocol version and the UPDATE AUTHORITY protocol version match.
  2. If authentication is required to get latest versions list.
+ 3. Which is the UR
 
 To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY URL, it MUST add `handshake/`to the end of the URL. In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
@@ -137,11 +138,11 @@ This operation is intended to be used to achieve one of these two goals:
 
 TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1ODAzMTc1NiwtOTc1OTI1NzAxLDUwND
-c3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3LC0yODA5MzcxOTks
-LTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOT
-E4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1
-NTg1LDE5NDk3ODg4NDQsLTE3OTAwMDQ4NDcsLTY3NTI1NDUxNS
-w1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIzMDYxNTc2LDE0OTk5
-MTc5MTRdfQ==
+eyJoaXN0b3J5IjpbLTI3NDQ1MDk5MCwtODU4MDMxNzU2LC05Nz
+U5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcs
+LTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MD
+MyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIw
+NDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAwNDg0Ny
+wtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMw
+NjE1NzZdfQ==
 -->
