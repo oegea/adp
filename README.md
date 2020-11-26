@@ -142,6 +142,8 @@ At the beginning of this operation, the UPDATE CLIENT will first perform the "Ha
 
 If the handshake is success, the UPDATE CLIENT MUST perform an HTTPS GET request to the versions list URL. That URL SHOULD be taken from the information obtained from the UPDATE AUTHORITY, during the handshake operation.
 
+This request MAY require the usage of authentication mechanisms. 
+
 In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
@@ -156,17 +158,17 @@ Each item contained on the "latestVersions" parameter MUST have this data struct
  3. URL from where the version can be downloaded. This MUST be contained inside a string parameter named "downloadUrl".
  4. If user and password are required to download the version. This MUST be contained inside a boolean parameter named "requiresAuthentication".
  5. Description about the changes contained in the version. This MUST be contained inside a string parameter named "releaseNotes".
- 6. Date of public. This releaseDate
+ 6. Date of publication. This MUST be contained inside a string parameter named "releaseDate".
 
 Note that the name or identifier of the version, contained inside `applicationVersion` MAY be represented on any desired format as long as it is contained inside a string.
 
-This request MAY require the usage of authentication mechanisms. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjg3MTY5NCwxNTQ1ODY5MDM0LC0xMj
-c1MjYxNCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3
-NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05OD
-Q3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0
-NjcsMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC
-05NDYzMjA0ODAsLTMyMDQ2NTU4NSwxOTQ5Nzg4ODQ0LC0xNzkw
-MDA0ODQ3XX0=
+eyJoaXN0b3J5IjpbLTE1MjA5Mzk4NzgsMTU0NTg2OTAzNCwtMT
+I3NTI2MTQsMTM2OTA2MTQyNSwtMTA2ODAxMjEzNywtODU4MDMx
+NzU2LC05NzU5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOT
+g0NzMyNjcsLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2
+NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4My
+wtOTQ2MzIwNDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5
+MDAwNDg0N119
 -->
