@@ -152,7 +152,7 @@ Each item contained on the "latestVersions" parameter MUST be an object.
 Each item contained on the "latestVersions" parameter MUST have this data structure:
 
  1. Name or identifier of the version. This MUST be contained inside a string parameter named "applicationVersion".
- 2. isStable
+ 2. If the version is considered stable or not. This MUST be contained inside a boolean parameter named "isStable".
  3. downloadUrl
  4. requiresAuthentication
  5. releaseNotes
@@ -162,7 +162,7 @@ Note that the name or identifier of the version, contained inside `applicationVe
 
 This request MAY require the usage of authentication mechanisms. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MjcyMzEyOSwtMTI3NTI2MTQsMTM2OT
+eyJoaXN0b3J5IjpbMTc4NDQ1MDc5MiwtMTI3NTI2MTQsMTM2OT
 A2MTQyNSwtMTA2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3
 MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MD
 kzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIy
