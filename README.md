@@ -3,8 +3,8 @@
 ## Introduction
 
  - **Authors** 
-	 - Oriol Egea: Definition and writting.
-	 - Ricardo Quintanilla: Spell Checking.
+	 - Oriol Egea: Protocol definition.
+	 - Ricardo Quintanilla: Spell Checking, and wording improvements.
  - **Version** 1.0
  - **Status** Work In Progress
  - **Last Modification** Nov. 2020
@@ -142,7 +142,7 @@ At the beginning of this operation, the UPDATE CLIENT will first perform the "Ha
 
 TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTA2NDg2NiwtMTA2ODAxMjEzNywtOD
+eyJoaXN0b3J5IjpbMTM2OTA2MTQyNSwtMTA2ODAxMjEzNywtOD
 U4MDMxNzU2LC05NzU5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTky
 MCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMj
 A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
