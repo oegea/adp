@@ -109,7 +109,7 @@ To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request t
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named "protocolVersion".
  2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named "requiresAuthentication".
- 3. The URL where versions list can be found. This MUST be contained inside a string parameter named "releasesUrl".
+ 3. The URL where versions list can be found. This MUST be contained inside a string parameter named "versionsListUrl".
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -117,7 +117,8 @@ The returned JSON MUST follow the following format:
 ```json
 {
 	"protocolVersion": "1.0",
-	"requiresAuthentication": false
+	"requiresAuthentication": false,
+	"versionsListUrl": "https://mydomain.com/adp/myproduct/releases/"
 }
 ```
 *Values are provided as examples.*
@@ -139,11 +140,11 @@ This operation is intended to be used to achieve one of these two goals:
 
 TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTc0NDIzMCwtODU4MDMxNzU2LC05Nz
-U5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcs
-LTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MD
-MyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIw
-NDgwLC0zMjA0NjU1ODUsMTk0OTc4ODg0NCwtMTc5MDAwNDg0Ny
-wtNjc1MjU0NTE1LDUzMDI1NDA5NCwxMTE1OTg0NTcyLC0zMjMw
-NjE1NzZdfQ==
+eyJoaXN0b3J5IjpbLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOT
+c1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3
+LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxND
+AzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMy
+MDQ4MCwtMzIwNDY1NTg1LDE5NDk3ODg4NDQsLTE3OTAwMDQ4ND
+csLTY3NTI1NDUxNSw1MzAyNTQwOTQsMTExNTk4NDU3MiwtMzIz
+MDYxNTc2XX0=
 -->
