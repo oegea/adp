@@ -150,7 +150,7 @@ This request MAY require the usage of authentication mechanisms.
 
 In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
- 1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named `protocolVersion"`
+ 1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named `protocolVersion`
  2. List of latest versions. This MUST be contained inside an array parameter named `latestVersions`.
 
 Each item contained on the `latestVersions` parameter MUST be an object and  MUST be conformed by this data structure:
@@ -168,11 +168,11 @@ The returned JSON MUST follow the following format:
 
 TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNTk0MjI1OSwxMTgyMzA3NzgyLDE1ND
-U4NjkwMzQsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNjgwMTIx
-MzcsLTg1ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3MDQ5OSwzMz
-AwODE5MjAsLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MTYyMzc2
-NzYsMTIwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4MDYyMjA4LD
-E2NTQ5MjkxODMsLTk0NjMyMDQ4MCwtMzIwNDY1NTg1LDE5NDk3
-ODg4NDRdfQ==
+eyJoaXN0b3J5IjpbLTM4MjYyODIzMSwxOTI1OTQyMjU5LDExOD
+IzMDc3ODIsMTU0NTg2OTAzNCwtMTI3NTI2MTQsMTM2OTA2MTQy
+NSwtMTA2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3MDEsNT
+A0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkzNzE5
+OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIyODcsLT
+E5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIwNDgwLC0zMjA0
+NjU1ODVdfQ==
 -->
