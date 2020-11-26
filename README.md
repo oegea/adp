@@ -4,7 +4,7 @@
 
  - **Authors** 
 	 - Oriol Egea: Definition and writting.
-	 - Ricardo Quintanilla: Grammar and translation.
+	 - Ricardo Quintanilla: Spell Checking.
  - **Version** 1.0
  - **Status** Work In Progress
  - **Last Modification** Nov. 2020
@@ -140,8 +140,9 @@ This operation is intended to be used to achieve one of these two goals:
 
 At the beginning of this operation, the UPDATE CLIENT will first perform the "Handshake between the UPDATE CLIENT and UPDATE AUTHORITY" operation.
 
+TBD...
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDgyNjI3MSwtMTA2ODAxMjEzNywtOD
+eyJoaXN0b3J5IjpbMTQyMTA2NDg2NiwtMTA2ODAxMjEzNywtOD
 U4MDMxNzU2LC05NzU5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTky
 MCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMj
 A2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDky
