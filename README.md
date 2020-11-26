@@ -154,15 +154,15 @@ Each item contained on the "latestVersions" parameter MUST have this data struct
  1. Name or identifier of the version. This MUST be contained inside a string parameter named "applicationVersion".
  2. If the version is considered stable or not. This MUST be contained inside a boolean parameter named "isStable".
  3. URL from where the version can be downloaded. This MUST be contained inside a string parameter named "downloadUrl".
- 4. If user and password are required to download the vers. This MUST be contained inside a boolean parameter named "requiresAuthentication".
- 5. releaseNotes
+ 4. If user and password are required to download the version. This MUST be contained inside a boolean parameter named "requiresAuthentication".
+ 5. Description about the changes contained in the version. This MUST be contained inside a string parameter named "releaseNotes".
  6. releaseDate
 
 Note that the name or identifier of the version, contained inside `applicationVersion` MAY be represented on any desired format as long as it is contained inside a string.
 
 This request MAY require the usage of authentication mechanisms. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzIzMzcyMywtMTI3NTI2MTQsMTM2OT
+eyJoaXN0b3J5IjpbMTU0NTg2OTAzNCwtMTI3NTI2MTQsMTM2OT
 A2MTQyNSwtMTA2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3
 MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MD
 kzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIy
