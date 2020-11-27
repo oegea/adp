@@ -73,19 +73,19 @@ ADP is divided in three main operations:
 
 ### UPDATE CLIENT configuration
 
-The first step on ADP is to configure the `UPDATE CLIENT`. In this operation, the end-user will provide to the `UPDATE CLIENT` with the URL with which to access the APPLICATION SERVICE. 
+The first step on ADP is to configure the `UPDATE CLIENT`. In this operation, the end-user will provide to the `UPDATE CLIENT` with the URL with which to access the `APPLICATION SERVICE`. 
 
-Additionally, the UPDATE CLIENT MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the UPDATE CLIENT SHOULD only install stable versions.
+Additionally, the `UPDATE CLIENT` MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the `UPDATE CLIENT` SHOULD only install stable versions.
 
-The UPDATE CLIENT will then do an HTTPS GET request to the indicated URL. 
+The `UPDATE CLIENT` will then do an HTTPS GET request to the indicated URL. 
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
-In response to that request, the APPLICATION SERVICE MUST provide a JSON with the following data: 
+In response to that request, the `APPLICATION SERVICE` MUST provide a JSON with the following data: 
 
- 1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named `protocolVersion`.
+ 1. ADP version used by the `APPLICATION SERVICE`. This MUST be contained inside a string parameter named `protocolVersion`.
  2. Current installed version. This MUST be contained inside a string parameter named `applicationVersion`.
- 3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
+ 3. The `UPDATE AUTHORITY`'s URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
  4. A URL containing the application's thumbnail or logo. This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
 
 The returned JSON MUST follow the following format:
@@ -195,7 +195,7 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NDQwMzg0NywtMTc0MjEyMTk0MSwtMT
+eyJoaXN0b3J5IjpbMTM4NTc4NTE1MSwtMTc0MjEyMTk0MSwtMT
 gyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0
 MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LD
 EzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1
