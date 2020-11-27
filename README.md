@@ -84,18 +84,20 @@ This request MUST NOT require the usage of authentication mechanisms.
 In response to that request, the `APPLICATION SERVICE` MUST provide a JSON with the following data: 
 
  1. ADP version used by the `APPLICATION SERVICE`. This MUST be contained inside a string parameter named `protocolVersion`.
- 2. Current installed version. This MUST be contained inside a string parameter named `applicationVersion`.
- 3. A URL containing the application's thumbnail or logo. This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
- 4. The `UPDATE AUTHORITY`'s URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
+ 2. Name of the application. This MUST be contained inside a string parameter named `applicationName`.
+ 3. Current installed version. This MUST be contained inside a string parameter named `applicationVersion`.
+ 4. A URL containing the application's thumbnail or logo. This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
+ 5. The `UPDATE AUTHORITY`'s URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
 
 
 The returned JSON MUST follow the following format:
 ```json
 {
 	"protocolVersion": "1.0",
+	"applicationName": "My Application",
 	"applicationVersion": "3.5-beta",
-	"updateAuthorityUrl": "https://mydomain.com/adp/myproduct/",
-	"applicationThumbnail": "https://mydomain.com/adp/myproduct/thumbnail.png"
+	"applicationThumbnail": "https://mydomain.com/adp/myproduct/thumbnail.png",
+	"updateAuthorityUrl": "https://mydomain.com/adp/myproduct/"
 }
 ```
 *Values are provided as examples.*
@@ -196,11 +198,11 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjQ4MTgwMTIsMTM0MzUzMTcwMiwtMT
-c0MjEyMTk0MSwtMTgyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2
-MjgyMzEsMTkyNTk0MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMz
-QsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1
-ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5Mj
-AsLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIw
-NjQxNjQ2N119
+eyJoaXN0b3J5IjpbMTQxMDc1MzE3LDEzNDM1MzE3MDIsLTE3ND
+IxMjE5NDEsLTE4MjYwMTUxMDEsLTY3NDEwNjY3NSwtMzgyNjI4
+MjMxLDE5MjU5NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC
+0xMjc1MjYxNCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgw
+MzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC
+05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0
+MTY0NjddfQ==
 -->
