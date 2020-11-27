@@ -183,9 +183,9 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-
+`latestVersions` parameter MUST have 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ1NjU5OTgwLC0zODI2MjgyMzEsMTkyNT
+eyJoaXN0b3J5IjpbOTEwNTY2NzAyLC0zODI2MjgyMzEsMTkyNT
 k0MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0
 LDEzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOT
 c1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3
