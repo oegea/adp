@@ -85,8 +85,9 @@ In response to that request, the `APPLICATION SERVICE` MUST provide a JSON with 
 
  1. ADP version used by the `APPLICATION SERVICE`. This MUST be contained inside a string parameter named `protocolVersion`.
  2. Current installed version. This MUST be contained inside a string parameter named `applicationVersion`.
- 3. The `UPDATE AUTHORITY`'s URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
- 4. A URL containing the application's thumbnail or logo. This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
+ 3. A URL containing the application's thumbnail or logo. This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
+ 4. The `UPDATE AUTHORITY`'s URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
+
 
 The returned JSON MUST follow the following format:
 ```json
@@ -195,11 +196,11 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MzUzMTcwMiwtMTc0MjEyMTk0MSwtMT
-gyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0
-MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LD
-EzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1
-OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3LC
-0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxNDAz
-MjgyMjg3XX0=
+eyJoaXN0b3J5IjpbLTEwNjQ4MTgwMTIsMTM0MzUzMTcwMiwtMT
+c0MjEyMTk0MSwtMTgyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2
+MjgyMzEsMTkyNTk0MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMz
+QsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1
+ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5Mj
+AsLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIw
+NjQxNjQ2N119
 -->
