@@ -169,17 +169,19 @@ Each item MUST follow the following format:
 ```json
 {
 	"applicationVersion": "3.5",
+	"isStable": true,
+	"downloadUrl": "https://mydomain.com/releases/myproduct/3.5.exe",
 	"requiresAuthentication": false,
 	"versionsListUrl": "https://mydomain.com/adp/myproduct/releases/"
 }
 ```
 *Values are provided as examples.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4NjQ2OTU2LC0zODI2MjgyMzEsMTkyNT
-k0MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0
-LDEzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOT
-c1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3
-LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxND
-AzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMy
-MDQ4MF19
+eyJoaXN0b3J5IjpbMTQzNjU1MTkyMiwtMzgyNjI4MjMxLDE5Mj
+U5NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYx
+NCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLT
+k3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05ODQ3MzI2
+NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMT
+QwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC05NDYz
+MjA0ODBdfQ==
 -->
