@@ -187,13 +187,13 @@ The returned JSON MUST follow the following format:
 
 `latestVersions` parameter MUST be ordered chronologically, in a descendant way, that means that the first item in the array is the latest available version.
 
-
+The UPDATE CLIENT MUST iterate `latestVersions`, skipping the non-stables rel
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NDEwNjY3NSwtMzgyNjI4MjMxLDE5Mj
-U5NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYx
-NCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLT
-k3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05ODQ3MzI2
-NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMT
-QwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC05NDYz
-MjA0ODBdfQ==
+eyJoaXN0b3J5IjpbLTE3Nzk5NzcxMDIsLTY3NDEwNjY3NSwtMz
+gyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5
+MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC
+04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgx
+OTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LD
+EyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0
+OTI5MTgzXX0=
 -->
