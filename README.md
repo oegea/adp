@@ -183,13 +183,13 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-`latestVersions` parameter MUST have 
+`latestVersions` parameter MUST have only up to two items: One to ng the latest stable version, and another one for the latest non-stable released version.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwNTY2NzAyLC0zODI2MjgyMzEsMTkyNT
-k0MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0
-LDEzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOT
-c1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3
-LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxND
-AzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMy
-MDQ4MF19
+eyJoaXN0b3J5IjpbLTEzNTY2NDcwMTAsLTM4MjYyODIzMSwxOT
+I1OTQyMjU5LDExODIzMDc3ODIsMTU0NTg2OTAzNCwtMTI3NTI2
+MTQsMTM2OTA2MTQyNSwtMTA2ODAxMjEzNywtODU4MDMxNzU2LC
+05NzU5MjU3MDEsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMy
+NjcsLTI4MDkzNzE5OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LD
+E0MDMyODIyODcsLTE5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2
+MzIwNDgwXX0=
 -->
