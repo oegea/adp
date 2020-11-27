@@ -86,14 +86,15 @@ In response to that request, the APPLICATION SERVICE MUST provide a JSON with th
  1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named `protocolVersion`.
  2. Current installed version. This MUST be contained inside a string parameter named `applicationVersion`.
  3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
- 4. The application's thumbnail URL. This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter 
+ 4. A URL containing the application's . This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
 
 The returned JSON MUST follow the following format:
 ```json
 {
 	"protocolVersion": "1.0",
 	"applicationVersion": "3.5-beta",
-	"updateAuthorityUrl": "https://mydomain.com/adp/myproduct/"
+	"updateAuthorityUrl": "https://mydomain.com/adp/myproduct/",
+	"applicationThumbnail": "https://mydomain.com/adp/myproduct/thumbnail.png"
 }
 ```
 *Values are provided as examples.*
@@ -194,11 +195,11 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzg2NjEzMywtMTc0MjEyMTk0MSwtMT
-gyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0
-MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LD
-EzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1
-OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3LC
-0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxNDAz
-MjgyMjg3XX0=
+eyJoaXN0b3J5IjpbLTE4NDc0MTEyNDcsLTE3NDIxMjE5NDEsLT
+E4MjYwMTUxMDEsLTY3NDEwNjY3NSwtMzgyNjI4MjMxLDE5MjU5
+NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNC
+wxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLTk3
+NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05ODQ3MzI2Ny
+wtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMTQw
+MzI4MjI4N119
 -->
