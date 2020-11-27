@@ -187,9 +187,11 @@ The returned JSON MUST follow the following format:
 
 `latestVersions` parameter MUST be ordered chronologically, in a descendant way, that means that the first item in the array is the latest available version.
 
-The UPDATE CLIENT MUST iterate `latestVersions`, skipping the non-stables rel
+The UPDATE CLIENT MUST iterate `latestVersions`, skipping the non-stables releases if during the `UPDATE CLIENT configuration` the end-user has not opted to download them.
+
+If the `UPDATE CLIENT` founds an item
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzk5NzcxMDIsLTY3NDEwNjY3NSwtMz
+eyJoaXN0b3J5IjpbLTE4MjYwMTUxMDEsLTY3NDEwNjY3NSwtMz
 gyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5
 MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC
 04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgx
