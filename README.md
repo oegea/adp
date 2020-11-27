@@ -51,17 +51,17 @@ There are three main actors involved on ADP, they appear in this document always
 
 ### UPDATE AUTHORITY
  
-The UPDATE AUTHORITY is a remote actor which goal is to provide to the UPDATE CLIENT a list with the latest available versions of a software application. 
+The `UPDATE AUTHORITY` is a remote actor which goal is to provide to the `UPDATE CLIENT` a list with the latest available versions of a software application. 
 
 ### UPDATE CLIENT
 
-The UPDATE CLIENT is an application that connects to the UPDATE AUTHORITY to check if new version is available, and download it if needed. 
+The `UPDATE CLIENT` is an application that connects to the `UPDATE AUTHORITY` to check if new version is available, and download it if needed. 
 
-The UPDATE CLIENT MAY handle more than one software application at the same instance, allowing the end user to manage all their software updates from one single place.
+The `UPDATE CLIENT` MAY handle more than one software application at the same instance, allowing the end user to manage all their software updates from one single place.
 
 ### APPLICATION SERVICE
 
-The APPLICATION SERVICE is a URL where there are details specified about the application to update. The APPLICATION SERVICE is checked by the UPDATE CLIENT to do the initial handshake with the rest of the actors, and to know which version of the software to update is installed.
+The `APPLICATION SERVICE` is a URL where there are details specified about the application to update. The `APPLICATION SERVICE` is checked by the `UPDATE CLIENT` to do the initial handshake with the rest of the actors, and to know which version of the software to update is installed.
 
 ## Operations 
 
@@ -86,7 +86,7 @@ In response to that request, the APPLICATION SERVICE MUST provide a JSON with th
  1. ADP version used by the APPLICATION SERVICE. This MUST be contained inside a string parameter named `protocolVersion`.
  2. Current installed version. This MUST be contained inside a string parameter named `applicationVersion`.
  3. The UPDATE AUTHORITY's URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
- 4. A URL containing the application's . This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
+ 4. A URL containing the application's thumbnail or logo. This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
 
 The returned JSON MUST follow the following format:
 ```json
@@ -195,7 +195,7 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDc0MTEyNDcsLTE3NDIxMjE5NDEsLT
+eyJoaXN0b3J5IjpbLTE1MDY5NDYzNzUsLTE3NDIxMjE5NDEsLT
 E4MjYwMTUxMDEsLTY3NDEwNjY3NSwtMzgyNjI4MjMxLDE5MjU5
 NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNC
 wxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLTk3
