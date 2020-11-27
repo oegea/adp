@@ -191,13 +191,13 @@ The `UPDATE CLIENT` MUST iterate `latestVersions`, skipping the non-stables rele
 
 If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicationVersion` value is different than the `applicationVersion`value returned by the APPLICATION SERVICE, it SHOULD alert the user and perform the download of the file if requested by the end-user.
 
-The way 
+The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1OTc4MjA5NSwtMTgyNjAxNTEwMSwtNj
-c0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0MjI1OSwxMTgyMzA3
-NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLT
-EwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3
-MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3LC0yODA5MzcxOTksLT
-E3MTYyMzc2NzYsMTIwNjQxNjQ2NywxNDAzMjgyMjg3LC0xOTE4
-MDYyMjA4XX0=
+eyJoaXN0b3J5IjpbLTE3Njg0MDQxNTksLTE4MjYwMTUxMDEsLT
+Y3NDEwNjY3NSwtMzgyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMw
+Nzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC
+0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3
+NzA0OTksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC
+0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkx
+ODA2MjIwOF19
 -->
