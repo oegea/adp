@@ -103,19 +103,19 @@ Note that the current installed version, contained inside `applicationVersion` M
 
 ### Handshake between the UPDATE CLIENT and UPDATE AUTHORITY
 
-The handshake between the UPDATE CLIENT and UPDATE AUTHORITY is intended to be used to perform three main verifications:
+The handshake between the `UPDATE CLIENT` and `UPDATE AUTHORITY` is intended to be used to perform three main verifications:
 
- 1. That the APPLICATION SERVICE protocol version and the UPDATE AUTHORITY protocol version match.
+ 1. That the `APPLICATION SERVICE` protocol version and the `UPDATE AUTHORITY` protocol version match.
  2. If authentication is required to get latest versions list.
  3. Which is the URL from where the latest versions list can be retrieved.
 
-To perform this operation, the UPDATE CLIENT will perform an HTTPS GET request to the UPDATE AUTHORITY URL. 
+To perform this operation, the `UPDATE CLIENT` will perform an HTTPS GET request to the `UPDATE AUTHORITY` URL. 
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
-In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
+In response to this request, the `UPDATE AUTHORITY` MUST provide a JSON with the following data: 
 
- 1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named `protocolVersion"`
+ 1. ADP version used by the `UPDATE AUTHORITY`. This MUST be contained inside a string parameter named `protocolVersion"`
  2. If user and password are required to get latest versions list. This MUST be contained inside a boolean parameter named `requiresAuthentication`.
  3. The URL where versions list can be found. This MUST be contained inside a string parameter named `versionsListUrl`.
 
@@ -129,7 +129,7 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-Once the UPDATE CLIENT receives a response, it MUST check that the value of the `protocolVersion` parameter matches with the APPLICATION SERVICE protocol version. 
+Once the `UPDATE CLIENT` receives a response, it MUST check that the value of the `protocolVersion` parameter matches with the `APPLICATION SERVICE` protocol version. 
 
 To perform the protocol version checking, the UPDATE CLIENT MAY get the APPLICATION SERVICE protocol version by performing the same HTTPS request than the described in `UPDATE CLIENT configuration` operation.
 
@@ -195,7 +195,7 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTc4NTE1MSwtMTc0MjEyMTk0MSwtMT
+eyJoaXN0b3J5IjpbMTY5MDQzODE2MywtMTc0MjEyMTk0MSwtMT
 gyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0
 MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LD
 EzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1
