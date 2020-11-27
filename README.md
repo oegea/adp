@@ -164,15 +164,22 @@ Each item contained on the `latestVersions` parameter MUST be an object and  MUS
 
 Note that the name or identifier of the version, contained inside `applicationVersion` MAY be represented on any desired format as long as it is contained inside a string.
 
-The returned JSON MUST follow the following format:
+Each item MUST follow the following format:
 
-TBD...
+```json
+{
+	"applicationVersion": "3.5",
+	"requiresAuthentication": false,
+	"versionsListUrl": "https://mydomain.com/adp/myproduct/releases/"
+}
+```
+*Values are provided as examples.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjYyODIzMSwxOTI1OTQyMjU5LDExOD
-IzMDc3ODIsMTU0NTg2OTAzNCwtMTI3NTI2MTQsMTM2OTA2MTQy
-NSwtMTA2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3MDEsNT
-A0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkzNzE5
-OSwtMTcxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIyODcsLT
-E5MTgwNjIyMDgsMTY1NDkyOTE4MywtOTQ2MzIwNDgwLC0zMjA0
-NjU1ODVdfQ==
+eyJoaXN0b3J5IjpbOTY4NjQ2OTU2LC0zODI2MjgyMzEsMTkyNT
+k0MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0
+LDEzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOT
+c1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3
+LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxND
+AzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMy
+MDQ4MF19
 -->
