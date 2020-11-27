@@ -187,15 +187,15 @@ The returned JSON MUST follow the following format:
 
 `latestVersions` parameter MUST be ordered chronologically, in a descendant way, that means that the first item in the array is the latest available version.
 
-The UPDATE CLIENT MUST iterate `latestVersions`, skipping the non-stables releases if during the `UPDATE CLIENT configuration` the end-user has not opted to download them.
+The `UPDATE CLIENT` MUST iterate `latestVersions`, skipping the non-stables releases if during the `UPDATE CLIENT configuration` the end-user has not opted to download them.
 
-If the `UPDATE CLIENT` founds an item in `latestVersions` which `applicationVersion` parameter's value is different than the returned by the APPLICATION SERVICE
+If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicationVersion` value is different than the returned by the APPLICATION SERVICE, it S
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE2MzIzMTYsLTE4MjYwMTUxMDEsLTY3ND
-EwNjY3NSwtMzgyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMwNzc4
-MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC0xMD
-Y4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0
-OTksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNz
-E2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2
-MjIwOF19
+eyJoaXN0b3J5IjpbOTQ5NzIyNTEzLC0xODI2MDE1MTAxLC02Nz
+QxMDY2NzUsLTM4MjYyODIzMSwxOTI1OTQyMjU5LDExODIzMDc3
+ODIsMTU0NTg2OTAzNCwtMTI3NTI2MTQsMTM2OTA2MTQyNSwtMT
+A2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3MDEsNTA0Nzcw
+NDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMT
+cxNjIzNzY3NiwxMjA2NDE2NDY3LDE0MDMyODIyODcsLTE5MTgw
+NjIyMDhdfQ==
 -->
