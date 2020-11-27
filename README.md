@@ -150,9 +150,9 @@ If the handshake is success, the `UPDATE CLIENT` MUST perform an HTTPS GET reque
 
 This request MAY require the usage of authentication mechanisms. 
 
-In response to this request, the `UPDATE AUTHORITY MUST provide a JSON with the following data: 
+In response to this request, the `UPDATE AUTHORITY` MUST provide a JSON with the following data: 
 
- 1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named `protocolVersion`
+ 1. ADP version used by the `UPDATE AUTHORITY`. This MUST be contained inside a string parameter named `protocolVersion`
  2. List of latest versions. This MUST be contained inside an array parameter named `latestVersions`.
 
 Each item contained on the `latestVersions` parameter MUST be an object and  MUST be conformed by this data structure:
@@ -185,9 +185,9 @@ The returned JSON MUST follow the following format:
 ```
 *Values are provided as examples.*
 
-`latestVersions` parameter MUST have only up to two items: One to describe the latest stable version, and another one for the latest non-stable released version.
+`latestVersions` parameter MUST have only up to two items: One to describe the latest stable version, and another one for the latest non-stable latest released version.
 
-`latestVersions` parameter MUST be ordered chronologically, in a descendant way, that means that the first item in the array is the latest available version.
+`latestVersions` parameter MUST be ordered chronologically, in a descendant way, that means that the first item in the array will be always the newest version.
 
 The `UPDATE CLIENT` MUST iterate `latestVersions`, skipping the non-stables releases if during the `UPDATE CLIENT configuration` the end-user has not opted to download them.
 
@@ -195,7 +195,7 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0ODgyMzMxMSwtMTc0MjEyMTk0MSwtMT
+eyJoaXN0b3J5IjpbMTM0MzUzMTcwMiwtMTc0MjEyMTk0MSwtMT
 gyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0
 MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LD
 EzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1
