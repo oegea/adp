@@ -189,11 +189,11 @@ The returned JSON MUST follow the following format:
 
 The `UPDATE CLIENT` MUST iterate `latestVersions`, skipping the non-stables releases if during the `UPDATE CLIENT configuration` the end-user has not opted to download them.
 
-If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicationVersion` value is different than the `applicationVersion`value returned by the APPLICATION SERVICE, it SHOULD alert the user and perform the download of the file if requested by the end-user.
+If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicationVersion` value is different than the `applicationVersion`value returned by the `APPLICATION SERVICE`, it SHOULD alert the user and perform the download of the file if requested by the end-user.
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njg0MDQxNTksLTE4MjYwMTUxMDEsLT
+eyJoaXN0b3J5IjpbLTE3NDIxMjE5NDEsLTE4MjYwMTUxMDEsLT
 Y3NDEwNjY3NSwtMzgyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMw
 Nzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC
 0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3
