@@ -168,23 +168,28 @@ The returned JSON MUST follow the following format:
 
 ```json
 {
-	"applicationVersion": "3.5",
-	"isStable": true,
-	"downloadUrl": "https://mydomain.com/releases/myproduct/3.5.exe",
-	"requiresAuthentication": false,
-	"releaseNotes": "Changelog here",
-	"releaseDate": "December of 2020"
+	"protocolVersion": "1.0",
+	"latestVersions": [
+		{
+			"applicationVersion": "3.5",
+			"isStable": true,
+			"downloadUrl": "https://mydomain.com/releases/myproduct/3.5.exe",
+			"requiresAuthentication": false,
+			"releaseNotes": "Changelog here",
+			"releaseDate": "December of 2020"
+		}
+	]
 }
 ```
 *Values are provided as examples.*
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDIzNDI0MSwtMzgyNjI4MjMxLDE5Mj
-U5NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYx
-NCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLT
-k3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05ODQ3MzI2
-NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMT
-QwMzI4MjI4NywtMTkxODA2MjIwOCwxNjU0OTI5MTgzLC05NDYz
-MjA0ODBdfQ==
+eyJoaXN0b3J5IjpbNzQ1NjU5OTgwLC0zODI2MjgyMzEsMTkyNT
+k0MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0
+LDEzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOT
+c1OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3
+LC0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxND
+AzMjgyMjg3LC0xOTE4MDYyMjA4LDE2NTQ5MjkxODMsLTk0NjMy
+MDQ4MF19
 -->
