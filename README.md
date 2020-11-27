@@ -164,7 +164,7 @@ Each item contained on the `latestVersions` parameter MUST be an object and  MUS
 
 Note that the name or identifier of the version, contained inside `applicationVersion` MAY be represented on any desired format as long as it is contained inside a string.
 
-Each item MUST follow the following format:
+The returned JSON MUST follow the following format:
 
 ```json
 {
@@ -172,12 +172,15 @@ Each item MUST follow the following format:
 	"isStable": true,
 	"downloadUrl": "https://mydomain.com/releases/myproduct/3.5.exe",
 	"requiresAuthentication": false,
-	"versionsListUrl": "https://mydomain.com/adp/myproduct/releases/"
+	"releaseNotes": "Changelog here",
+	"releaseDate": "December of 2020"
 }
 ```
 *Values are provided as examples.*
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjU1MTkyMiwtMzgyNjI4MjMxLDE5Mj
+eyJoaXN0b3J5IjpbMTI4NDIzNDI0MSwtMzgyNjI4MjMxLDE5Mj
 U5NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYx
 NCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLT
 k3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05ODQ3MzI2
