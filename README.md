@@ -73,7 +73,7 @@ ADP is divided in three main operations:
 
 ### UPDATE CLIENT configuration
 
-The first step on ADP is to configure the UPDATE CLIENT. In this operation, the end-user will provide to the UPDATE CLIENT with the URL with which to access the APPLICATION SERVICE. 
+The first step on ADP is to configure the `UPDATE CLIENT`. In this operation, the end-user will provide to the `UPDATE CLIENT` with the URL with which to access the APPLICATION SERVICE. 
 
 Additionally, the UPDATE CLIENT MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the UPDATE CLIENT SHOULD only install stable versions.
 
@@ -195,11 +195,11 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDY5NDYzNzUsLTE3NDIxMjE5NDEsLT
-E4MjYwMTUxMDEsLTY3NDEwNjY3NSwtMzgyNjI4MjMxLDE5MjU5
-NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNC
-wxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLTk3
-NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC05ODQ3MzI2Ny
-wtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMTQw
-MzI4MjI4N119
+eyJoaXN0b3J5IjpbLTM1NDQwMzg0NywtMTc0MjEyMTk0MSwtMT
+gyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0
+MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LD
+EzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1
+OTI1NzAxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3LC
+0yODA5MzcxOTksLTE3MTYyMzc2NzYsMTIwNjQxNjQ2NywxNDAz
+MjgyMjg3XX0=
 -->
