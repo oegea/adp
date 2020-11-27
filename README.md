@@ -131,11 +131,11 @@ The returned JSON MUST follow the following format:
 
 Once the `UPDATE CLIENT` receives a response, it MUST check that the value of the `protocolVersion` parameter matches with the `APPLICATION SERVICE` protocol version. 
 
-To perform the protocol version checking, the UPDATE CLIENT MAY get the APPLICATION SERVICE protocol version by performing the same HTTPS request than the described in `UPDATE CLIENT configuration` operation.
+To perform the protocol version checking, the `UPDATE CLIENT` SHOULD get the `APPLICATION SERVICE` protocol version by performing the same HTTPS request than the described in `UPDATE CLIENT configuration` operation.
 
-If one of the actors is using a different ADP version, or an ADP version not implemented by the UPDATE CLIENT, the handshake MUST be terminated showing an error, and any update operation MUST NOT be continued.
+If one of the actors is using a different ADP version, or an ADP version not implemented by the `UPDATE CLIENT`, the handshake MUST be terminated showing an error, and any update operation MUST NOT be continued.
 
-Note that the UPDATE CLIENT MAY use any desired mechanism to retrieve credentials, in case that authentication is required by the UPDATE AUTHORITY. The way the credentials can be retrieved or asked to the end-user is out of the scope of this document.
+Note that the `UPDATE CLIENT` MAY use any desired mechanism to retrieve credentials, in case that authentication is required by the `UPDATE AUTHORITY`. The way the credentials can be retrieved or asked to the end-user is out of the scope of this document.
 
 ### Available updates check and download
 
@@ -144,13 +144,13 @@ This operation is intended to be used to achieve one of these two goals:
  1. Check if there is a new version available, and display a notification to alert the end-user.
  2. Download new available versions as needed.
 
-At the beginning of this operation, the UPDATE CLIENT will first perform the `Handshake between the UPDATE CLIENT and UPDATE AUTHORITY` operation.
+At the beginning of this operation, the `UPDATE CLIENT` will first perform the `Handshake between the UPDATE CLIENT and UPDATE AUTHORITY` operation.
 
-If the handshake is success, the UPDATE CLIENT MUST perform an HTTPS GET request to the versions list URL. That URL SHOULD be taken from the information obtained from the UPDATE AUTHORITY, during the handshake operation.
+If the handshake is success, the `UPDATE CLIENT` MUST perform an HTTPS GET request to the versions list URL. That URL SHOULD be taken from the information obtained from the `UPDATE AUTHORITY`, during the handshake operation.
 
 This request MAY require the usage of authentication mechanisms. 
 
-In response to this request, the UPDATE AUTHORITY MUST provide a JSON with the following data: 
+In response to this request, the `UPDATE AUTHORITY MUST provide a JSON with the following data: 
 
  1. ADP version used by the UPDATE AUTHORITY. This MUST be contained inside a string parameter named `protocolVersion`
  2. List of latest versions. This MUST be contained inside an array parameter named `latestVersions`.
@@ -195,7 +195,7 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MDQzODE2MywtMTc0MjEyMTk0MSwtMT
+eyJoaXN0b3J5IjpbLTg0ODgyMzMxMSwtMTc0MjEyMTk0MSwtMT
 gyNjAxNTEwMSwtNjc0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0
 MjI1OSwxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LD
 EzNjkwNjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1
