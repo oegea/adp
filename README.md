@@ -189,13 +189,13 @@ The returned JSON MUST follow the following format:
 
 The UPDATE CLIENT MUST iterate `latestVersions`, skipping the non-stables releases if during the `UPDATE CLIENT configuration` the end-user has not opted to download them.
 
-If the `UPDATE CLIENT` founds an item with a value on the `applicationVersion` parameter different than the returned by the APPLICATION SERVICE
+If the `UPDATE CLIENT` founds an item in `latestVersions` which `applicationVersion` parameter's value is different than the returned by the APPLICATION SERVICE
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTUxOTExMTUsLTE4MjYwMTUxMDEsLT
-Y3NDEwNjY3NSwtMzgyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMw
-Nzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC
-0xMDY4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3
-NzA0OTksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC
-0xNzE2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkx
-ODA2MjIwOF19
+eyJoaXN0b3J5IjpbNjE2MzIzMTYsLTE4MjYwMTUxMDEsLTY3ND
+EwNjY3NSwtMzgyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMwNzc4
+MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC0xMD
+Y4MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0
+OTksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNz
+E2MjM3Njc2LDEyMDY0MTY0NjcsMTQwMzI4MjI4NywtMTkxODA2
+MjIwOF19
 -->
