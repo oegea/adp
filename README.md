@@ -37,7 +37,7 @@ Simplicity is one of the main goals of ADP,  we've described the protocol enforc
 Because of this, these are the patterns, technologies and protocols that you MUST use to ensure a valid ADP implementation:
 
  - **No dependencies between updates**: Your application MUST be able to be updated to the latest available version without installing intermediate updates, that means: If main application is at 1.0 version, and the latest is the 5.0, it MUST be capable to be directly updated to the version 5.0, skipping the 2.0, 3.0 and 4.0 previously released versions. 
- - **HTTPS**: All communication between actors MUST be done using the HTTPS protocol. Non-secure HTTP MUST NOT be used.
+ - **HTTPS**: All communication between actors MUST be done using the HTTPS protocol. Non-secure HTTP MUST NOT be used. There is only one case in which is allowed to directly read a file, instead of performing an HTTPS request.
  - **BASIC AUTH**: In those operations in which authentication can be implemented, BASIC AUTH MUST be the way within one actor will send their credentials to other. 
  - **JSON**: Data transferred between actors MUST be formatted using [JSON](https://tools.ietf.org/html/rfc7159). 
 
@@ -78,6 +78,8 @@ The first step on ADP is to configure the `UPDATE CLIENT`. In this operation, th
 Additionally, the `UPDATE CLIENT` MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the `UPDATE CLIENT` SHOULD only install stable versions.
 
 The `UPDATE CLIENT` will then do an HTTPS GET request to the indicated URI if it uses the HTTPS protocol, if the URI points to a local file, then `UPDATE CLIENT` will request to read the file content. 
+
+
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -133,7 +135,7 @@ The returned JSON MUST follow the following format:
 
 Once the `UPDATE CLIENT` receives a response, it MUST check that the value of the `protocolVersion` parameter matches with the `APPLICATION SERVICE` protocol version. 
 
-To perform the protocol version checking, the `UPDATE CLIENT` SHOULD get the `APPLICATION SERVICE` protocol version by performing the same HTTPS request than the described in `UPDATE CLIENT configuration` operation.
+To perform the protocol version checking, the `UPDATE CLIENT` SHOULD get the `APPLICATION SERVICE` protocol version by performing the same request than the described in `UPDATE CLIENT configuration` operation.
 
 If one of the actors is using a different ADP version, or an ADP version not implemented by the `UPDATE CLIENT`, the handshake MUST be terminated showing an error, and any update operation MUST NOT be continued.
 
@@ -197,11 +199,11 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzk5ODE5NDgsMTQxMDc1MzE3LDEzND
-M1MzE3MDIsLTE3NDIxMjE5NDEsLTE4MjYwMTUxMDEsLTY3NDEw
-NjY3NSwtMzgyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMwNzc4Mi
-wxNTQ1ODY5MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC0xMDY4
-MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OT
-ksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNzE2
-MjM3Njc2XX0=
+eyJoaXN0b3J5IjpbMTk1NzQzMjUwMiwxNDEwNzUzMTcsMTM0Mz
+UzMTcwMiwtMTc0MjEyMTk0MSwtMTgyNjAxNTEwMSwtNjc0MTA2
+Njc1LC0zODI2MjgyMzEsMTkyNTk0MjI1OSwxMTgyMzA3NzgyLD
+E1NDU4NjkwMzQsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNjgw
+MTIxMzcsLTg1ODAzMTc1NiwtOTc1OTI1NzAxLDUwNDc3MDQ5OS
+wzMzAwODE5MjAsLTk4NDczMjY3LC0yODA5MzcxOTksLTE3MTYy
+Mzc2NzZdfQ==
 -->
