@@ -73,11 +73,11 @@ ADP is divided in three main operations:
 
 ### UPDATE CLIENT configuration
 
-The first step on ADP is to configure the `UPDATE CLIENT`. In this operation, the end-user will provide to the `UPDATE CLIENT` with the URL with which to access the `APPLICATION SERVICE`. 
+The first step on ADP is to configure the `UPDATE CLIENT`. In this operation, the end-user will provide to the `UPDATE CLIENT` with the URI with which to access the `APPLICATION SERVICE`. 
 
 Additionally, the `UPDATE CLIENT` MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the `UPDATE CLIENT` SHOULD only install stable versions.
 
-The `UPDATE CLIENT` will then do an HTTPS GET request to the indicated URL. 
+The `UPDATE CLIENT` will then do an HTTPS GET request to the indicated URI if it uses the HTTPS protocol, if the URI points to a loc. 
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -198,11 +198,11 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMDc1MzE3LDEzNDM1MzE3MDIsLTE3ND
-IxMjE5NDEsLTE4MjYwMTUxMDEsLTY3NDEwNjY3NSwtMzgyNjI4
-MjMxLDE5MjU5NDIyNTksMTE4MjMwNzc4MiwxNTQ1ODY5MDM0LC
-0xMjc1MjYxNCwxMzY5MDYxNDI1LC0xMDY4MDEyMTM3LC04NTgw
-MzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OTksMzMwMDgxOTIwLC
-05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNzE2MjM3Njc2LDEyMDY0
-MTY0NjddfQ==
+eyJoaXN0b3J5IjpbOTg1MTUxMDU2LDE0MTA3NTMxNywxMzQzNT
+MxNzAyLC0xNzQyMTIxOTQxLC0xODI2MDE1MTAxLC02NzQxMDY2
+NzUsLTM4MjYyODIzMSwxOTI1OTQyMjU5LDExODIzMDc3ODIsMT
+U0NTg2OTAzNCwtMTI3NTI2MTQsMTM2OTA2MTQyNSwtMTA2ODAx
+MjEzNywtODU4MDMxNzU2LC05NzU5MjU3MDEsNTA0NzcwNDk5LD
+MzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMTcxNjIz
+NzY3Nl19
 -->
