@@ -14,7 +14,11 @@
 
 Application Distribution Protocol (ADP) is a basic communication protocol built on top of web technologies, which aims to provide a standarized way for applications to check for new versions, and download them.
 
-**Heads up! This is not an official st
+**Heads up! This is not an official standard**
+
+This is not an official standard of any type. We've created this as 
+
+**How to interprete imperative sentences**
 
 Although this is not an IETF document, the key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
@@ -203,11 +207,11 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQwNTI2MzYsLTIyODUyNzU1NywxND
-EwNzUzMTcsMTM0MzUzMTcwMiwtMTc0MjEyMTk0MSwtMTgyNjAx
-NTEwMSwtNjc0MTA2Njc1LC0zODI2MjgyMzEsMTkyNTk0MjI1OS
-wxMTgyMzA3NzgyLDE1NDU4NjkwMzQsLTEyNzUyNjE0LDEzNjkw
-NjE0MjUsLTEwNjgwMTIxMzcsLTg1ODAzMTc1NiwtOTc1OTI1Nz
-AxLDUwNDc3MDQ5OSwzMzAwODE5MjAsLTk4NDczMjY3LC0yODA5
-MzcxOTldfQ==
+eyJoaXN0b3J5IjpbLTQ1MzM0MTIyMCwtMjI4NTI3NTU3LDE0MT
+A3NTMxNywxMzQzNTMxNzAyLC0xNzQyMTIxOTQxLC0xODI2MDE1
+MTAxLC02NzQxMDY2NzUsLTM4MjYyODIzMSwxOTI1OTQyMjU5LD
+ExODIzMDc3ODIsMTU0NTg2OTAzNCwtMTI3NTI2MTQsMTM2OTA2
+MTQyNSwtMTA2ODAxMjEzNywtODU4MDMxNzU2LC05NzU5MjU3MD
+EsNTA0NzcwNDk5LDMzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkz
+NzE5OV19
 -->
