@@ -77,7 +77,7 @@ The first step on ADP is to configure the `UPDATE CLIENT`. In this operation, th
 
 Additionally, the `UPDATE CLIENT` MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the `UPDATE CLIENT` SHOULD only install stable versions.
 
-The `UPDATE CLIENT` will then do an HTTPS GET request to the indicated URI if it uses the HTTPS protocol, if the URI points to a loc. 
+The `UPDATE CLIENT` will then do an HTTPS GET request to the indicated URI if it uses the HTTPS protocol, if the URI points to a local file, then `UPDATE CLIENT` will request to read the file content. 
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -88,7 +88,6 @@ In response to that request, the `APPLICATION SERVICE` MUST provide a JSON with 
  3. Current installed version. This MUST be contained inside a string parameter named `applicationVersion`.
  4. A URL containing the application's thumbnail or logo. This is an OPTIONAL parameter, and in case it's specified it MUST be contained inside a string parameter named `applicationThumbnail`.
  5. The `UPDATE AUTHORITY`'s URL. This MUST be contained inside a string parameter named `updateAuthorityUrl"`
-
 
 The returned JSON MUST follow the following format:
 ```json
@@ -198,11 +197,11 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1MTUxMDU2LDE0MTA3NTMxNywxMzQzNT
-MxNzAyLC0xNzQyMTIxOTQxLC0xODI2MDE1MTAxLC02NzQxMDY2
-NzUsLTM4MjYyODIzMSwxOTI1OTQyMjU5LDExODIzMDc3ODIsMT
-U0NTg2OTAzNCwtMTI3NTI2MTQsMTM2OTA2MTQyNSwtMTA2ODAx
-MjEzNywtODU4MDMxNzU2LC05NzU5MjU3MDEsNTA0NzcwNDk5LD
-MzMDA4MTkyMCwtOTg0NzMyNjcsLTI4MDkzNzE5OSwtMTcxNjIz
-NzY3Nl19
+eyJoaXN0b3J5IjpbLTEwMzk5ODE5NDgsMTQxMDc1MzE3LDEzND
+M1MzE3MDIsLTE3NDIxMjE5NDEsLTE4MjYwMTUxMDEsLTY3NDEw
+NjY3NSwtMzgyNjI4MjMxLDE5MjU5NDIyNTksMTE4MjMwNzc4Mi
+wxNTQ1ODY5MDM0LC0xMjc1MjYxNCwxMzY5MDYxNDI1LC0xMDY4
+MDEyMTM3LC04NTgwMzE3NTYsLTk3NTkyNTcwMSw1MDQ3NzA0OT
+ksMzMwMDgxOTIwLC05ODQ3MzI2NywtMjgwOTM3MTk5LC0xNzE2
+MjM3Njc2XX0=
 -->
