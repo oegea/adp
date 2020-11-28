@@ -77,9 +77,9 @@ The first step on ADP is to configure the `UPDATE CLIENT`. In this operation, th
 
 Additionally, the `UPDATE CLIENT` MAY ask at this point to the end-user if non-stable versions have to be installed. By default, unless there is expressly specified, the `UPDATE CLIENT` SHOULD only install stable versions.
 
-The `UPDATE CLIENT` will then do an HTTPS GET request to the indicated URI if it uses the HTTPS protocol, if the URI points to a local file, then `UPDATE CLIENT` will request to read the file content. 
+The `UPDATE CLIENT` will then do an HTTPS GET request to the indicated URI if it uses the HTTPS protocol, if the URI points to a local file using the `file://` protocol, then `UPDATE CLIENT` will request to read the file content. 
 
-
+This is the unique case where communication between actors MAY be achieved using local files.
 
 This request MUST NOT require the usage of authentication mechanisms. 
 
@@ -199,7 +199,7 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NzQzMjUwMiwxNDEwNzUzMTcsMTM0Mz
+eyJoaXN0b3J5IjpbLTIyODUyNzU1NywxNDEwNzUzMTcsMTM0Mz
 UzMTcwMiwtMTc0MjEyMTk0MSwtMTgyNjAxNTEwMSwtNjc0MTA2
 Njc1LC0zODI2MjgyMzEsMTkyNTk0MjI1OSwxMTgyMzA3NzgyLD
 E1NDU4NjkwMzQsLTEyNzUyNjE0LDEzNjkwNjE0MjUsLTEwNjgw
