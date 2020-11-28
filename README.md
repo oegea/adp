@@ -16,7 +16,7 @@ Application Distribution Protocol (ADP) is a basic communication protocol built 
 
 **Heads up! This is not an official standard**
 
-This is not an official standard of any type. We've created this as a personal project, with which create decoupled update systems in a more generic way. To make it more familiar to readers, wording is inspired on IETF documents, h
+This is not an official standard of any type. We've created this as a personal project, with which create decoupled update systems in a more generic way, to avoid rewritting and rethinking all the update process every time . To make it more familiar to readers, wording is inspired on IETF documents, however be aware that this process is not created, maintained or supported by any organization, and is part of a personal project.
 
 **How to interprete imperative sentences**
 
@@ -207,7 +207,7 @@ If the `UPDATE CLIENT` founds an item in `latestVersions` in which the `applicat
 
 The way files should be downloaded, stored or installed is out of the scope of this document.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM0NTY1MjQwLC0yMjg1Mjc1NTcsMTQxMD
+eyJoaXN0b3J5IjpbNTYzMTU2NDk1LC0yMjg1Mjc1NTcsMTQxMD
 c1MzE3LDEzNDM1MzE3MDIsLTE3NDIxMjE5NDEsLTE4MjYwMTUx
 MDEsLTY3NDEwNjY3NSwtMzgyNjI4MjMxLDE5MjU5NDIyNTksMT
 E4MjMwNzc4MiwxNTQ1ODY5MDM0LC0xMjc1MjYxNCwxMzY5MDYx
